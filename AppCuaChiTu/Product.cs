@@ -9,8 +9,8 @@ namespace AppCuaChiTu
     public class Product
     {
         public int id { get; set; }
-        public string text { get; set; }
-        public int Branch { get; set; }
+        public string name{ get; set; }
+        public string Branch { get; set; }
         public int Maximumnumberofunitsinavirtualchassis { get; set; }
         public int _mgig_port_100M_1G_2_5G_BaseT { get; set; }
         public int _1G_SFP_plus_port_ { get; set; }
@@ -54,6 +54,7 @@ namespace AppCuaChiTu
         public int HPOE_75_W_Port { get; set; }
         public int RAM { get; set; }
         public int _Flexible_NetFlow__FNF_entries { get; set; }
+        public bool IsAdventageLicense { get; set; }
         public bool RIP { get; set; }
         public bool MACSec { get; set; }
         public bool BGP { get; set; }

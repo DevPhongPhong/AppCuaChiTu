@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace AppCuaChiTu
@@ -14,9 +11,11 @@ namespace AppCuaChiTu
         [STAThread]
         static void Main()
         {
+            CreateSqliteDbExtension.Create();
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MainForm());
+            Application.Run(new AddForm());
         }
     }
 }
