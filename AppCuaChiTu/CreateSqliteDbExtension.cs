@@ -25,6 +25,7 @@ namespace AppCuaChiTu
                                         id INTEGER PRIMARY KEY AUTOINCREMENT,
                                         name TEXT,
                                         Branch TEXT,
+                                        Price NUMERIC, 
                                         Maximumnumberofunitsinavirtualchassis INTEGER,
                                         _mgig_port_100M_1G_2_5G_BaseT INTEGER,
                                         _1G_SFP_plus_port_ INTEGER,

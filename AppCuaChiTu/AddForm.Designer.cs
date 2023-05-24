@@ -143,6 +143,9 @@
             this.radbutEssential = new System.Windows.Forms.RadioButton();
             this.radbutAdv = new System.Windows.Forms.RadioButton();
             this.alert = new System.Windows.Forms.Label();
+            this.btnReset = new System.Windows.Forms.Button();
+            this.Price = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -1230,11 +1233,44 @@
             this.alert.Size = new System.Drawing.Size(0, 24);
             this.alert.TabIndex = 170;
             // 
+            // btnReset
+            // 
+            this.btnReset.Location = new System.Drawing.Point(934, 611);
+            this.btnReset.Margin = new System.Windows.Forms.Padding(2);
+            this.btnReset.Name = "btnReset";
+            this.btnReset.Size = new System.Drawing.Size(93, 41);
+            this.btnReset.TabIndex = 171;
+            this.btnReset.Text = "Làm mới";
+            this.btnReset.UseVisualStyleBackColor = true;
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
+            // 
+            // Price
+            // 
+            this.Price.HideSelection = false;
+            this.Price.Location = new System.Drawing.Point(418, 77);
+            this.Price.Margin = new System.Windows.Forms.Padding(2);
+            this.Price.Name = "Price";
+            this.Price.Size = new System.Drawing.Size(129, 20);
+            this.Price.TabIndex = 172;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(416, 62);
+            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(31, 13);
+            this.label10.TabIndex = 173;
+            this.label10.Text = "Price";
+            // 
             // AddForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1185, 752);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.Price);
+            this.Controls.Add(this.btnReset);
             this.Controls.Add(this.alert);
             this.Controls.Add(this.radbutAdv);
             this.Controls.Add(this.radbutEssential);
@@ -1476,6 +1512,9 @@
 
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Label alert;
+        private System.Windows.Forms.Button btnReset;
+        private System.Windows.Forms.TextBox Price;
+        private System.Windows.Forms.Label label10;
     }
 }
 

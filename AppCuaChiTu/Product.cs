@@ -9,8 +9,9 @@ namespace AppCuaChiTu
     public class Product
     {
         public int id { get; set; }
-        public string name{ get; set; }
+        public string name { get; set; }
         public string Branch { get; set; }
+        public decimal Price { get; set; }
         public int Maximumnumberofunitsinavirtualchassis { get; set; }
         public int _mgig_port_100M_1G_2_5G_BaseT { get; set; }
         public int _1G_SFP_plus_port_ { get; set; }
@@ -75,6 +76,8 @@ namespace AppCuaChiTu
         public bool PBR { get; set; }
         public bool Private_VLAN { get; set; }
         public bool OSPF_Full { get; set; }
+
+
 
     }
 }
