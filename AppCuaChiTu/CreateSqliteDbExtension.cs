@@ -12,10 +12,10 @@ namespace AppCuaChiTu
     {
         public static void Create()
         {
-            string filename = "C:\\mydb.sqlite";
+            string filename = "D:\\mydb.sqlite";
             if (!File.Exists(filename))
             {
-                string connectionString = "Data Source=C:\\mydb.sqlite;Version=3;";
+                string connectionString = "Data Source=D:\\mydb.sqlite;Version=3;";
                 SQLiteConnection.CreateFile(filename);
                 using (var connection = new SQLiteConnection(connectionString))
                 {
@@ -76,7 +76,7 @@ namespace AppCuaChiTu
                                         VRRP BOOLEAN,
                                         SPAN_and_RSPAN BOOLEAN,
                                         ERSPAN BOOLEAN,
-                                        DAI BOOLEAN, = temp;
+                                        DAI BOOLEAN,
                                         IS_IS BOOLEAN,
                                         MACSec_128_bit BOOLEAN,
                                         Static_Routing BOOLEAN,

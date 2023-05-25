@@ -9,7 +9,7 @@ namespace AppCuaChiTu
 {
     public class Repo
     {
-        string connectionString = "Data Source=C:/mydb.sqlite;Version=3;";
+        string connectionString = "Data Source=D:/mydb.sqlite;Version=3;";
         SQLiteConnection connection;
         string sql;
         SQLiteCommand command;

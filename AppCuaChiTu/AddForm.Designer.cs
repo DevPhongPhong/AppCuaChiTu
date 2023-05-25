@@ -138,14 +138,16 @@
             this.Private_VLAN = new System.Windows.Forms.CheckBox();
             this.OSPF_Full = new System.Windows.Forms.CheckBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.name = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.name = new System.Windows.Forms.TextBox();
+            this.label17 = new System.Windows.Forms.Label();
+            this.Price = new System.Windows.Forms.TextBox();
+            this.label18 = new System.Windows.Forms.Label();
+            this.btnReset = new System.Windows.Forms.Button();
+            this.alert = new System.Windows.Forms.Label();
             this.radbutEssential = new System.Windows.Forms.RadioButton();
             this.radbutAdv = new System.Windows.Forms.RadioButton();
-            this.alert = new System.Windows.Forms.Label();
-            this.btnReset = new System.Windows.Forms.Button();
-            this.Price = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -156,7 +158,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(41, 13);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Branch";
+            this.label1.Text = "Vendor";
             // 
             // Branch
             // 
@@ -168,16 +170,16 @@
             // 
             // Maximumnumberofunitsinavirtualchassis
             // 
-            this.Maximumnumberofunitsinavirtualchassis.Location = new System.Drawing.Point(112, 485);
+            this.Maximumnumberofunitsinavirtualchassis.Location = new System.Drawing.Point(112, 437);
             this.Maximumnumberofunitsinavirtualchassis.Margin = new System.Windows.Forms.Padding(2);
             this.Maximumnumberofunitsinavirtualchassis.Name = "Maximumnumberofunitsinavirtualchassis";
-            this.Maximumnumberofunitsinavirtualchassis.Size = new System.Drawing.Size(258, 20);
+            this.Maximumnumberofunitsinavirtualchassis.Size = new System.Drawing.Size(316, 20);
             this.Maximumnumberofunitsinavirtualchassis.TabIndex = 3;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(109, 470);
+            this.label2.Location = new System.Drawing.Point(109, 422);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(218, 13);
@@ -186,7 +188,7 @@
             // 
             // _mgig_port_100M_1G_2_5G_BaseT
             // 
-            this._mgig_port_100M_1G_2_5G_BaseT.Location = new System.Drawing.Point(569, 246);
+            this._mgig_port_100M_1G_2_5G_BaseT.Location = new System.Drawing.Point(468, 246);
             this._mgig_port_100M_1G_2_5G_BaseT.Margin = new System.Windows.Forms.Padding(2);
             this._mgig_port_100M_1G_2_5G_BaseT.Name = "_mgig_port_100M_1G_2_5G_BaseT";
             this._mgig_port_100M_1G_2_5G_BaseT.Size = new System.Drawing.Size(178, 20);
@@ -195,7 +197,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(109, 377);
+            this.label3.Location = new System.Drawing.Point(110, 381);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(73, 13);
@@ -204,16 +206,16 @@
             // 
             // _1G_SFP_plus_port_
             // 
-            this._1G_SFP_plus_port_.Location = new System.Drawing.Point(924, 209);
+            this._1G_SFP_plus_port_.Location = new System.Drawing.Point(669, 175);
             this._1G_SFP_plus_port_.Margin = new System.Windows.Forms.Padding(2);
             this._1G_SFP_plus_port_.Name = "_1G_SFP_plus_port_";
-            this._1G_SFP_plus_port_.Size = new System.Drawing.Size(159, 20);
+            this._1G_SFP_plus_port_.Size = new System.Drawing.Size(178, 20);
             this._1G_SFP_plus_port_.TabIndex = 5;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(921, 194);
+            this.label4.Location = new System.Drawing.Point(669, 160);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(71, 13);
@@ -222,16 +224,16 @@
             // 
             // _MAX_IPv6_routes
             // 
-            this._MAX_IPv6_routes.Location = new System.Drawing.Point(570, 375);
+            this._MAX_IPv6_routes.Location = new System.Drawing.Point(272, 355);
             this._MAX_IPv6_routes.Margin = new System.Windows.Forms.Padding(2);
             this._MAX_IPv6_routes.Name = "_MAX_IPv6_routes";
-            this._MAX_IPv6_routes.Size = new System.Drawing.Size(129, 20);
+            this._MAX_IPv6_routes.Size = new System.Drawing.Size(156, 20);
             this._MAX_IPv6_routes.TabIndex = 11;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(568, 360);
+            this.label7.Location = new System.Drawing.Point(273, 339);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(87, 13);
@@ -240,16 +242,16 @@
             // 
             // _100GE_QSFP28_Ports
             // 
-            this._100GE_QSFP28_Ports.Location = new System.Drawing.Point(761, 246);
+            this._100GE_QSFP28_Ports.Location = new System.Drawing.Point(673, 396);
             this._100GE_QSFP28_Ports.Margin = new System.Windows.Forms.Padding(2);
             this._100GE_QSFP28_Ports.Name = "_100GE_QSFP28_Ports";
-            this._100GE_QSFP28_Ports.Size = new System.Drawing.Size(129, 20);
+            this._100GE_QSFP28_Ports.Size = new System.Drawing.Size(177, 20);
             this._100GE_QSFP28_Ports.TabIndex = 9;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(921, 339);
+            this.label8.Location = new System.Drawing.Point(881, 381);
             this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(54, 13);
@@ -258,16 +260,16 @@
             // 
             // _Multicast_groups
             // 
-            this._Multicast_groups.Location = new System.Drawing.Point(419, 339);
+            this._Multicast_groups.Location = new System.Drawing.Point(884, 135);
             this._Multicast_groups.Margin = new System.Windows.Forms.Padding(2);
             this._Multicast_groups.Name = "_Multicast_groups";
-            this._Multicast_groups.Size = new System.Drawing.Size(129, 20);
+            this._Multicast_groups.Size = new System.Drawing.Size(159, 20);
             this._Multicast_groups.TabIndex = 27;
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(416, 324);
+            this.label11.Location = new System.Drawing.Point(881, 120);
             this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(84, 13);
@@ -276,16 +278,16 @@
             // 
             // _MAC_Address_Table
             // 
-            this._MAC_Address_Table.Location = new System.Drawing.Point(419, 376);
+            this._MAC_Address_Table.Location = new System.Drawing.Point(884, 172);
             this._MAC_Address_Table.Margin = new System.Windows.Forms.Padding(2);
             this._MAC_Address_Table.Name = "_MAC_Address_Table";
-            this._MAC_Address_Table.Size = new System.Drawing.Size(129, 20);
+            this._MAC_Address_Table.Size = new System.Drawing.Size(159, 20);
             this._MAC_Address_Table.TabIndex = 25;
             // 
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(921, 265);
+            this.label12.Location = new System.Drawing.Point(881, 303);
             this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(67, 13);
@@ -294,16 +296,16 @@
             // 
             // _20G_QSFP_plus_
             // 
-            this._20G_QSFP_plus_.Location = new System.Drawing.Point(761, 209);
+            this._20G_QSFP_plus_.Location = new System.Drawing.Point(674, 322);
             this._20G_QSFP_plus_.Margin = new System.Windows.Forms.Padding(2);
             this._20G_QSFP_plus_.Name = "_20G_QSFP_plus_";
-            this._20G_QSFP_plus_.Size = new System.Drawing.Size(129, 20);
+            this._20G_QSFP_plus_.Size = new System.Drawing.Size(176, 20);
             this._20G_QSFP_plus_.TabIndex = 23;
             // 
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(759, 157);
+            this.label13.Location = new System.Drawing.Point(669, 120);
             this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(65, 13);
@@ -312,16 +314,16 @@
             // 
             // RJ45_SFP_combo_1G
             // 
-            this.RJ45_SFP_combo_1G.Location = new System.Drawing.Point(418, 135);
+            this.RJ45_SFP_combo_1G.Location = new System.Drawing.Point(468, 286);
             this.RJ45_SFP_combo_1G.Margin = new System.Windows.Forms.Padding(2);
             this.RJ45_SFP_combo_1G.Name = "RJ45_SFP_combo_1G";
-            this.RJ45_SFP_combo_1G.Size = new System.Drawing.Size(129, 20);
+            this.RJ45_SFP_combo_1G.Size = new System.Drawing.Size(178, 20);
             this.RJ45_SFP_combo_1G.TabIndex = 21;
             // 
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(416, 120);
+            this.label14.Location = new System.Drawing.Point(466, 271);
             this.label14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(115, 13);
@@ -330,16 +332,17 @@
             // 
             // PoE_15_4WPort
             // 
-            this.PoE_15_4WPort.Location = new System.Drawing.Point(262, 135);
+            this.PoE_15_4WPort.Location = new System.Drawing.Point(276, 135);
             this.PoE_15_4WPort.Margin = new System.Windows.Forms.Padding(2);
             this.PoE_15_4WPort.Name = "PoE_15_4WPort";
-            this.PoE_15_4WPort.Size = new System.Drawing.Size(129, 20);
+            this.PoE_15_4WPort.Size = new System.Drawing.Size(152, 20);
             this.PoE_15_4WPort.TabIndex = 19;
+            this.PoE_15_4WPort.Text = "av";
             // 
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(259, 120);
+            this.label15.Location = new System.Drawing.Point(273, 120);
             this.label15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(90, 13);
@@ -351,8 +354,9 @@
             this.ForwardingBandwidth.Location = new System.Drawing.Point(112, 135);
             this.ForwardingBandwidth.Margin = new System.Windows.Forms.Padding(2);
             this.ForwardingBandwidth.Name = "ForwardingBandwidth";
-            this.ForwardingBandwidth.Size = new System.Drawing.Size(129, 20);
+            this.ForwardingBandwidth.Size = new System.Drawing.Size(135, 20);
             this.ForwardingBandwidth.TabIndex = 17;
+            this.ForwardingBandwidth.Text = "e ";
             // 
             // label16
             // 
@@ -366,16 +370,16 @@
             // 
             // _ACL_scale_entries
             // 
-            this._ACL_scale_entries.Location = new System.Drawing.Point(419, 485);
+            this._ACL_scale_entries.Location = new System.Drawing.Point(884, 281);
             this._ACL_scale_entries.Margin = new System.Windows.Forms.Padding(2);
             this._ACL_scale_entries.Name = "_ACL_scale_entries";
-            this._ACL_scale_entries.Size = new System.Drawing.Size(129, 20);
+            this._ACL_scale_entries.Size = new System.Drawing.Size(159, 20);
             this._ACL_scale_entries.TabIndex = 59;
             // 
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(416, 471);
+            this.label19.Location = new System.Drawing.Point(881, 267);
             this.label19.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(89, 13);
@@ -384,7 +388,7 @@
             // 
             // _VLAN_active
             // 
-            this._VLAN_active.Location = new System.Drawing.Point(924, 280);
+            this._VLAN_active.Location = new System.Drawing.Point(884, 323);
             this._VLAN_active.Margin = new System.Windows.Forms.Padding(2);
             this._VLAN_active.Name = "_VLAN_active";
             this._VLAN_active.Size = new System.Drawing.Size(159, 20);
@@ -393,7 +397,7 @@
             // label20
             // 
             this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(416, 397);
+            this.label20.Location = new System.Drawing.Point(881, 193);
             this.label20.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(105, 13);
@@ -402,16 +406,16 @@
             // 
             // _1G_SPF_port
             // 
-            this._1G_SPF_port.Location = new System.Drawing.Point(762, 172);
+            this._1G_SPF_port.Location = new System.Drawing.Point(669, 135);
             this._1G_SPF_port.Margin = new System.Windows.Forms.Padding(2);
             this._1G_SPF_port.Name = "_1G_SPF_port";
-            this._1G_SPF_port.Size = new System.Drawing.Size(129, 20);
+            this._1G_SPF_port.Size = new System.Drawing.Size(178, 20);
             this._1G_SPF_port.TabIndex = 55;
             // 
             // label21
             // 
             this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(760, 304);
+            this.label21.Location = new System.Drawing.Point(672, 271);
             this.label21.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(79, 13);
@@ -420,7 +424,7 @@
             // 
             // _mgig_port_100M_1G_2_5G_5G
             // 
-            this._mgig_port_100M_1G_2_5G_5G.Location = new System.Drawing.Point(569, 135);
+            this._mgig_port_100M_1G_2_5G_5G.Location = new System.Drawing.Point(468, 135);
             this._mgig_port_100M_1G_2_5G_5G.Margin = new System.Windows.Forms.Padding(2);
             this._mgig_port_100M_1G_2_5G_5G.Name = "_mgig_port_100M_1G_2_5G_5G";
             this._mgig_port_100M_1G_2_5G_5G.Size = new System.Drawing.Size(178, 20);
@@ -429,7 +433,7 @@
             // label22
             // 
             this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(566, 120);
+            this.label22.Location = new System.Drawing.Point(465, 120);
             this.label22.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(155, 13);
@@ -438,16 +442,16 @@
             // 
             // UPOE_60W_Port
             // 
-            this.UPOE_60W_Port.Location = new System.Drawing.Point(262, 209);
+            this.UPOE_60W_Port.Location = new System.Drawing.Point(276, 209);
             this.UPOE_60W_Port.Margin = new System.Windows.Forms.Padding(2);
             this.UPOE_60W_Port.Name = "UPOE_60W_Port";
-            this.UPOE_60W_Port.Size = new System.Drawing.Size(129, 20);
+            this.UPOE_60W_Port.Size = new System.Drawing.Size(152, 20);
             this.UPOE_60W_Port.TabIndex = 51;
             // 
             // label23
             // 
             this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(262, 194);
+            this.label23.Location = new System.Drawing.Point(276, 194);
             this.label23.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(91, 13);
@@ -459,7 +463,7 @@
             this.ForwardingCapacity.Location = new System.Drawing.Point(112, 209);
             this.ForwardingCapacity.Margin = new System.Windows.Forms.Padding(2);
             this.ForwardingCapacity.Name = "ForwardingCapacity";
-            this.ForwardingCapacity.Size = new System.Drawing.Size(129, 20);
+            this.ForwardingCapacity.Size = new System.Drawing.Size(137, 20);
             this.ForwardingCapacity.TabIndex = 49;
             // 
             // label24
@@ -474,16 +478,16 @@
             // 
             // _QoS_scale_entries
             // 
-            this._QoS_scale_entries.Location = new System.Drawing.Point(419, 522);
+            this._QoS_scale_entries.Location = new System.Drawing.Point(884, 437);
             this._QoS_scale_entries.Margin = new System.Windows.Forms.Padding(2);
             this._QoS_scale_entries.Name = "_QoS_scale_entries";
-            this._QoS_scale_entries.Size = new System.Drawing.Size(129, 20);
+            this._QoS_scale_entries.Size = new System.Drawing.Size(159, 20);
             this._QoS_scale_entries.TabIndex = 43;
             // 
             // label27
             // 
             this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(415, 231);
+            this.label27.Location = new System.Drawing.Point(269, 381);
             this.label27.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(147, 13);
@@ -492,7 +496,7 @@
             // 
             // _VLANs_ID
             // 
-            this._VLANs_ID.Location = new System.Drawing.Point(924, 354);
+            this._VLANs_ID.Location = new System.Drawing.Point(884, 396);
             this._VLANs_ID.Margin = new System.Windows.Forms.Padding(2);
             this._VLANs_ID.Name = "_VLANs_ID";
             this._VLANs_ID.Size = new System.Drawing.Size(159, 20);
@@ -501,7 +505,7 @@
             // label28
             // 
             this.label28.AutoSize = true;
-            this.label28.Location = new System.Drawing.Point(921, 302);
+            this.label28.Location = new System.Drawing.Point(881, 344);
             this.label28.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label28.Name = "label28";
             this.label28.Size = new System.Drawing.Size(162, 13);
@@ -510,16 +514,16 @@
             // 
             // _stacking_ports
             // 
-            this._stacking_ports.Location = new System.Drawing.Point(112, 392);
+            this._stacking_ports.Location = new System.Drawing.Point(110, 400);
             this._stacking_ports.Margin = new System.Windows.Forms.Padding(2);
             this._stacking_ports.Name = "_stacking_ports";
-            this._stacking_ports.Size = new System.Drawing.Size(129, 20);
+            this._stacking_ports.Size = new System.Drawing.Size(137, 20);
             this._stacking_ports.TabIndex = 39;
             // 
             // label29
             // 
             this.label29.AutoSize = true;
-            this.label29.Location = new System.Drawing.Point(416, 194);
+            this.label29.Location = new System.Drawing.Point(669, 197);
             this.label29.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label29.Name = "label29";
             this.label29.Size = new System.Drawing.Size(75, 13);
@@ -528,16 +532,16 @@
             // 
             // _1G_10G_RJ45_SFP_combo
             // 
-            this._1G_10G_RJ45_SFP_combo.Location = new System.Drawing.Point(419, 172);
+            this._1G_10G_RJ45_SFP_combo.Location = new System.Drawing.Point(468, 400);
             this._1G_10G_RJ45_SFP_combo.Margin = new System.Windows.Forms.Padding(2);
             this._1G_10G_RJ45_SFP_combo.Name = "_1G_10G_RJ45_SFP_combo";
-            this._1G_10G_RJ45_SFP_combo.Size = new System.Drawing.Size(129, 20);
+            this._1G_10G_RJ45_SFP_combo.Size = new System.Drawing.Size(178, 20);
             this._1G_10G_RJ45_SFP_combo.TabIndex = 37;
             // 
             // label30
             // 
             this.label30.AutoSize = true;
-            this.label30.Location = new System.Drawing.Point(416, 157);
+            this.label30.Location = new System.Drawing.Point(469, 385);
             this.label30.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label30.Name = "label30";
             this.label30.Size = new System.Drawing.Size(134, 13);
@@ -546,16 +550,16 @@
             // 
             // PoE_Plus_30W_Port
             // 
-            this.PoE_Plus_30W_Port.Location = new System.Drawing.Point(262, 172);
+            this.PoE_Plus_30W_Port.Location = new System.Drawing.Point(276, 172);
             this.PoE_Plus_30W_Port.Margin = new System.Windows.Forms.Padding(2);
             this.PoE_Plus_30W_Port.Name = "PoE_Plus_30W_Port";
-            this.PoE_Plus_30W_Port.Size = new System.Drawing.Size(129, 20);
+            this.PoE_Plus_30W_Port.Size = new System.Drawing.Size(152, 20);
             this.PoE_Plus_30W_Port.TabIndex = 35;
             // 
             // label31
             // 
             this.label31.AutoSize = true;
-            this.label31.Location = new System.Drawing.Point(262, 157);
+            this.label31.Location = new System.Drawing.Point(276, 157);
             this.label31.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label31.Name = "label31";
             this.label31.Size = new System.Drawing.Size(87, 13);
@@ -567,7 +571,7 @@
             this.SwitchingBandwidth.Location = new System.Drawing.Point(111, 172);
             this.SwitchingBandwidth.Margin = new System.Windows.Forms.Padding(2);
             this.SwitchingBandwidth.Name = "SwitchingBandwidth";
-            this.SwitchingBandwidth.Size = new System.Drawing.Size(129, 20);
+            this.SwitchingBandwidth.Size = new System.Drawing.Size(136, 20);
             this.SwitchingBandwidth.TabIndex = 33;
             // 
             // label32
@@ -582,24 +586,24 @@
             // 
             // _MAX_IPv4_routes
             // 
-            this._MAX_IPv4_routes.Location = new System.Drawing.Point(570, 337);
+            this._MAX_IPv4_routes.Location = new System.Drawing.Point(276, 317);
             this._MAX_IPv4_routes.Margin = new System.Windows.Forms.Padding(2);
             this._MAX_IPv4_routes.Name = "_MAX_IPv4_routes";
-            this._MAX_IPv4_routes.Size = new System.Drawing.Size(129, 20);
+            this._MAX_IPv4_routes.Size = new System.Drawing.Size(152, 20);
             this._MAX_IPv4_routes.TabIndex = 121;
             // 
             // _40GE_QSFP_plus_Ports
             // 
-            this._40GE_QSFP_plus_Ports.Location = new System.Drawing.Point(761, 135);
+            this._40GE_QSFP_plus_Ports.Location = new System.Drawing.Point(673, 359);
             this._40GE_QSFP_plus_Ports.Margin = new System.Windows.Forms.Padding(2);
             this._40GE_QSFP_plus_Ports.Name = "_40GE_QSFP_plus_Ports";
-            this._40GE_QSFP_plus_Ports.Size = new System.Drawing.Size(129, 20);
+            this._40GE_QSFP_plus_Ports.Size = new System.Drawing.Size(177, 20);
             this._40GE_QSFP_plus_Ports.TabIndex = 119;
             // 
             // label37
             // 
             this.label37.AutoSize = true;
-            this.label37.Location = new System.Drawing.Point(416, 361);
+            this.label37.Location = new System.Drawing.Point(881, 157);
             this.label37.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label37.Name = "label37";
             this.label37.Size = new System.Drawing.Size(101, 13);
@@ -609,7 +613,7 @@
             // label38
             // 
             this.label38.AutoSize = true;
-            this.label38.Location = new System.Drawing.Point(760, 194);
+            this.label38.Location = new System.Drawing.Point(673, 307);
             this.label38.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label38.Name = "label38";
             this.label38.Size = new System.Drawing.Size(64, 13);
@@ -618,16 +622,16 @@
             // 
             // _1GE_BaseX_SFP_port
             // 
-            this._1GE_BaseX_SFP_port.Location = new System.Drawing.Point(924, 172);
+            this._1GE_BaseX_SFP_port.Location = new System.Drawing.Point(469, 323);
             this._1GE_BaseX_SFP_port.Margin = new System.Windows.Forms.Padding(2);
             this._1GE_BaseX_SFP_port.Name = "_1GE_BaseX_SFP_port";
-            this._1GE_BaseX_SFP_port.Size = new System.Drawing.Size(159, 20);
+            this._1GE_BaseX_SFP_port.Size = new System.Drawing.Size(177, 20);
             this._1GE_BaseX_SFP_port.TabIndex = 115;
             // 
             // label39
             // 
             this.label39.AutoSize = true;
-            this.label39.Location = new System.Drawing.Point(921, 157);
+            this.label39.Location = new System.Drawing.Point(465, 308);
             this.label39.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label39.Name = "label39";
             this.label39.Size = new System.Drawing.Size(106, 13);
@@ -639,7 +643,7 @@
             this.Stack_Members.Location = new System.Drawing.Point(112, 355);
             this.Stack_Members.Margin = new System.Windows.Forms.Padding(2);
             this.Stack_Members.Name = "Stack_Members";
-            this.Stack_Members.Size = new System.Drawing.Size(129, 20);
+            this.Stack_Members.Size = new System.Drawing.Size(137, 20);
             this.Stack_Members.TabIndex = 113;
             // 
             // label40
@@ -654,24 +658,24 @@
             // 
             // _Total_number_of_IPv4_routes_ARP_plus_learned_routes_
             // 
-            this._Total_number_of_IPv4_routes_ARP_plus_learned_routes_.Location = new System.Drawing.Point(112, 522);
+            this._Total_number_of_IPv4_routes_ARP_plus_learned_routes_.Location = new System.Drawing.Point(468, 437);
             this._Total_number_of_IPv4_routes_ARP_plus_learned_routes_.Margin = new System.Windows.Forms.Padding(2);
             this._Total_number_of_IPv4_routes_ARP_plus_learned_routes_.Name = "_Total_number_of_IPv4_routes_ARP_plus_learned_routes_";
-            this._Total_number_of_IPv4_routes_ARP_plus_learned_routes_.Size = new System.Drawing.Size(258, 20);
+            this._Total_number_of_IPv4_routes_ARP_plus_learned_routes_.Size = new System.Drawing.Size(382, 20);
             this._Total_number_of_IPv4_routes_ARP_plus_learned_routes_.TabIndex = 105;
             // 
             // _10GE_SFP_plus_Ports
             // 
-            this._10GE_SFP_plus_Ports.Location = new System.Drawing.Point(761, 282);
+            this._10GE_SFP_plus_Ports.Location = new System.Drawing.Point(672, 249);
             this._10GE_SFP_plus_Ports.Margin = new System.Windows.Forms.Padding(2);
             this._10GE_SFP_plus_Ports.Name = "_10GE_SFP_plus_Ports";
-            this._10GE_SFP_plus_Ports.Size = new System.Drawing.Size(129, 20);
+            this._10GE_SFP_plus_Ports.Size = new System.Drawing.Size(178, 20);
             this._10GE_SFP_plus_Ports.TabIndex = 103;
             // 
             // label45
             // 
             this.label45.AutoSize = true;
-            this.label45.Location = new System.Drawing.Point(759, 231);
+            this.label45.Location = new System.Drawing.Point(671, 381);
             this.label45.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label45.Name = "label45";
             this.label45.Size = new System.Drawing.Size(110, 13);
@@ -681,7 +685,7 @@
             // label46
             // 
             this.label46.AutoSize = true;
-            this.label46.Location = new System.Drawing.Point(567, 231);
+            this.label46.Location = new System.Drawing.Point(466, 231);
             this.label46.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label46.Name = "label46";
             this.label46.Size = new System.Drawing.Size(170, 13);
@@ -690,16 +694,16 @@
             // 
             // _1GE_BaseT_Ports
             // 
-            this._1GE_BaseT_Ports.Location = new System.Drawing.Point(924, 135);
+            this._1GE_BaseT_Ports.Location = new System.Drawing.Point(468, 363);
             this._1GE_BaseT_Ports.Margin = new System.Windows.Forms.Padding(2);
             this._1GE_BaseT_Ports.Name = "_1GE_BaseT_Ports";
-            this._1GE_BaseT_Ports.Size = new System.Drawing.Size(159, 20);
+            this._1GE_BaseT_Ports.Size = new System.Drawing.Size(178, 20);
             this._1GE_BaseT_Ports.TabIndex = 99;
             // 
             // label47
             // 
             this.label47.AutoSize = true;
-            this.label47.Location = new System.Drawing.Point(921, 120);
+            this.label47.Location = new System.Drawing.Point(466, 348);
             this.label47.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label47.Name = "label47";
             this.label47.Size = new System.Drawing.Size(89, 13);
@@ -711,7 +715,7 @@
             this.Stackable.Location = new System.Drawing.Point(112, 318);
             this.Stackable.Margin = new System.Windows.Forms.Padding(2);
             this.Stackable.Name = "Stackable";
-            this.Stackable.Size = new System.Drawing.Size(129, 20);
+            this.Stackable.Size = new System.Drawing.Size(137, 20);
             this.Stackable.TabIndex = 97;
             // 
             // label48
@@ -726,16 +730,16 @@
             // 
             // _Power_Redundancy
             // 
-            this._Power_Redundancy.Location = new System.Drawing.Point(419, 449);
+            this._Power_Redundancy.Location = new System.Drawing.Point(884, 245);
             this._Power_Redundancy.Margin = new System.Windows.Forms.Padding(2);
             this._Power_Redundancy.Name = "_Power_Redundancy";
-            this._Power_Redundancy.Size = new System.Drawing.Size(129, 20);
+            this._Power_Redundancy.Size = new System.Drawing.Size(159, 20);
             this._Power_Redundancy.TabIndex = 91;
             // 
             // label51
             // 
             this.label51.AutoSize = true;
-            this.label51.Location = new System.Drawing.Point(416, 435);
+            this.label51.Location = new System.Drawing.Point(881, 231);
             this.label51.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label51.Name = "label51";
             this.label51.Size = new System.Drawing.Size(101, 13);
@@ -744,16 +748,16 @@
             // 
             // _Jumbo_Frame_Bytes_
             // 
-            this._Jumbo_Frame_Bytes_.Location = new System.Drawing.Point(419, 410);
+            this._Jumbo_Frame_Bytes_.Location = new System.Drawing.Point(884, 206);
             this._Jumbo_Frame_Bytes_.Margin = new System.Windows.Forms.Padding(2);
             this._Jumbo_Frame_Bytes_.Name = "_Jumbo_Frame_Bytes_";
-            this._Jumbo_Frame_Bytes_.Size = new System.Drawing.Size(129, 20);
+            this._Jumbo_Frame_Bytes_.Size = new System.Drawing.Size(159, 20);
             this._Jumbo_Frame_Bytes_.TabIndex = 89;
             // 
             // label52
             // 
             this.label52.AutoSize = true;
-            this.label52.Location = new System.Drawing.Point(568, 322);
+            this.label52.Location = new System.Drawing.Point(276, 303);
             this.label52.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label52.Name = "label52";
             this.label52.Size = new System.Drawing.Size(87, 13);
@@ -762,16 +766,16 @@
             // 
             // _10_25G_SFP28
             // 
-            this._10_25G_SFP28.Location = new System.Drawing.Point(760, 318);
+            this._10_25G_SFP28.Location = new System.Drawing.Point(672, 285);
             this._10_25G_SFP28.Margin = new System.Windows.Forms.Padding(2);
             this._10_25G_SFP28.Name = "_10_25G_SFP28";
-            this._10_25G_SFP28.Size = new System.Drawing.Size(129, 20);
+            this._10_25G_SFP28.Size = new System.Drawing.Size(178, 20);
             this._10_25G_SFP28.TabIndex = 87;
             // 
             // label53
             // 
             this.label53.AutoSize = true;
-            this.label53.Location = new System.Drawing.Point(758, 120);
+            this.label53.Location = new System.Drawing.Point(673, 344);
             this.label53.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label53.Name = "label53";
             this.label53.Size = new System.Drawing.Size(98, 13);
@@ -780,7 +784,7 @@
             // 
             // _mgig_port_1G_2_5G_BaseT
             // 
-            this._mgig_port_1G_2_5G_BaseT.Location = new System.Drawing.Point(569, 209);
+            this._mgig_port_1G_2_5G_BaseT.Location = new System.Drawing.Point(468, 209);
             this._mgig_port_1G_2_5G_BaseT.Margin = new System.Windows.Forms.Padding(2);
             this._mgig_port_1G_2_5G_BaseT.Name = "_mgig_port_1G_2_5G_BaseT";
             this._mgig_port_1G_2_5G_BaseT.Size = new System.Drawing.Size(178, 20);
@@ -789,7 +793,7 @@
             // label54
             // 
             this.label54.AutoSize = true;
-            this.label54.Location = new System.Drawing.Point(567, 194);
+            this.label54.Location = new System.Drawing.Point(466, 194);
             this.label54.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label54.Name = "label54";
             this.label54.Size = new System.Drawing.Size(138, 13);
@@ -798,16 +802,16 @@
             // 
             // _95W_802_3bt_PoE
             // 
-            this._95W_802_3bt_PoE.Location = new System.Drawing.Point(262, 280);
+            this._95W_802_3bt_PoE.Location = new System.Drawing.Point(276, 281);
             this._95W_802_3bt_PoE.Margin = new System.Windows.Forms.Padding(2);
             this._95W_802_3bt_PoE.Name = "_95W_802_3bt_PoE";
-            this._95W_802_3bt_PoE.Size = new System.Drawing.Size(129, 20);
+            this._95W_802_3bt_PoE.Size = new System.Drawing.Size(152, 20);
             this._95W_802_3bt_PoE.TabIndex = 83;
             // 
             // label55
             // 
             this.label55.AutoSize = true;
-            this.label55.Location = new System.Drawing.Point(262, 265);
+            this.label55.Location = new System.Drawing.Point(276, 265);
             this.label55.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label55.Name = "label55";
             this.label55.Size = new System.Drawing.Size(92, 13);
@@ -819,7 +823,7 @@
             this.Flash.Location = new System.Drawing.Point(111, 282);
             this.Flash.Margin = new System.Windows.Forms.Padding(2);
             this.Flash.Name = "Flash";
-            this.Flash.Size = new System.Drawing.Size(129, 20);
+            this.Flash.Size = new System.Drawing.Size(138, 20);
             this.Flash.TabIndex = 81;
             // 
             // label56
@@ -834,7 +838,7 @@
             // 
             // _VLAN_Interfaces_SVI_for_L3_Sw_
             // 
-            this._VLAN_Interfaces_SVI_for_L3_Sw_.Location = new System.Drawing.Point(924, 317);
+            this._VLAN_Interfaces_SVI_for_L3_Sw_.Location = new System.Drawing.Point(884, 359);
             this._VLAN_Interfaces_SVI_for_L3_Sw_.Margin = new System.Windows.Forms.Padding(2);
             this._VLAN_Interfaces_SVI_for_L3_Sw_.Name = "_VLAN_Interfaces_SVI_for_L3_Sw_";
             this._VLAN_Interfaces_SVI_for_L3_Sw_.Size = new System.Drawing.Size(159, 20);
@@ -843,7 +847,7 @@
             // label60
             // 
             this.label60.AutoSize = true;
-            this.label60.Location = new System.Drawing.Point(109, 507);
+            this.label60.Location = new System.Drawing.Point(472, 422);
             this.label60.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label60.Name = "label60";
             this.label60.Size = new System.Drawing.Size(261, 13);
@@ -852,16 +856,16 @@
             // 
             // _1G_10G_SFP_plus_
             // 
-            this._1G_10G_SFP_plus_.Location = new System.Drawing.Point(418, 209);
+            this._1G_10G_SFP_plus_.Location = new System.Drawing.Point(671, 212);
             this._1G_10G_SFP_plus_.Margin = new System.Windows.Forms.Padding(2);
             this._1G_10G_SFP_plus_.Name = "_1G_10G_SFP_plus_";
-            this._1G_10G_SFP_plus_.Size = new System.Drawing.Size(129, 20);
+            this._1G_10G_SFP_plus_.Size = new System.Drawing.Size(176, 20);
             this._1G_10G_SFP_plus_.TabIndex = 71;
             // 
             // label61
             // 
             this.label61.AutoSize = true;
-            this.label61.Location = new System.Drawing.Point(760, 267);
+            this.label61.Location = new System.Drawing.Point(672, 234);
             this.label61.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label61.Name = "label61";
             this.label61.Size = new System.Drawing.Size(90, 13);
@@ -870,7 +874,7 @@
             // 
             // _mgig_port_100M_1G_2_5G_5G_10G
             // 
-            this._mgig_port_100M_1G_2_5G_5G_10G.Location = new System.Drawing.Point(569, 172);
+            this._mgig_port_100M_1G_2_5G_5G_10G.Location = new System.Drawing.Point(468, 172);
             this._mgig_port_100M_1G_2_5G_5G_10G.Margin = new System.Windows.Forms.Padding(2);
             this._mgig_port_100M_1G_2_5G_5G_10G.Name = "_mgig_port_100M_1G_2_5G_5G_10G";
             this._mgig_port_100M_1G_2_5G_5G_10G.Size = new System.Drawing.Size(178, 20);
@@ -879,7 +883,7 @@
             // label62
             // 
             this.label62.AutoSize = true;
-            this.label62.Location = new System.Drawing.Point(567, 157);
+            this.label62.Location = new System.Drawing.Point(466, 157);
             this.label62.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label62.Name = "label62";
             this.label62.Size = new System.Drawing.Size(180, 13);
@@ -888,16 +892,16 @@
             // 
             // HPOE_75_W_Port
             // 
-            this.HPOE_75_W_Port.Location = new System.Drawing.Point(262, 243);
+            this.HPOE_75_W_Port.Location = new System.Drawing.Point(276, 243);
             this.HPOE_75_W_Port.Margin = new System.Windows.Forms.Padding(2);
             this.HPOE_75_W_Port.Name = "HPOE_75_W_Port";
-            this.HPOE_75_W_Port.Size = new System.Drawing.Size(129, 20);
+            this.HPOE_75_W_Port.Size = new System.Drawing.Size(152, 20);
             this.HPOE_75_W_Port.TabIndex = 67;
             // 
             // label63
             // 
             this.label63.AutoSize = true;
-            this.label63.Location = new System.Drawing.Point(262, 230);
+            this.label63.Location = new System.Drawing.Point(276, 230);
             this.label63.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label63.Name = "label63";
             this.label63.Size = new System.Drawing.Size(94, 13);
@@ -909,7 +913,7 @@
             this.RAM.Location = new System.Drawing.Point(111, 243);
             this.RAM.Margin = new System.Windows.Forms.Padding(2);
             this.RAM.Name = "RAM";
-            this.RAM.Size = new System.Drawing.Size(129, 20);
+            this.RAM.Size = new System.Drawing.Size(138, 20);
             this.RAM.TabIndex = 65;
             // 
             // label64
@@ -925,7 +929,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(416, 507);
+            this.label5.Location = new System.Drawing.Point(881, 418);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(90, 13);
@@ -934,15 +938,15 @@
             // 
             // _Flexible_NetFlow__FNF_entries
             // 
-            this._Flexible_NetFlow__FNF_entries.Location = new System.Drawing.Point(418, 246);
+            this._Flexible_NetFlow__FNF_entries.Location = new System.Drawing.Point(272, 400);
             this._Flexible_NetFlow__FNF_entries.Margin = new System.Windows.Forms.Padding(2);
             this._Flexible_NetFlow__FNF_entries.Name = "_Flexible_NetFlow__FNF_entries";
-            this._Flexible_NetFlow__FNF_entries.Size = new System.Drawing.Size(129, 20);
+            this._Flexible_NetFlow__FNF_entries.Size = new System.Drawing.Size(156, 20);
             this._Flexible_NetFlow__FNF_entries.TabIndex = 123;
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(934, 556);
+            this.btnAdd.Location = new System.Drawing.Point(511, 476);
             this.btnAdd.Margin = new System.Windows.Forms.Padding(2);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(93, 41);
@@ -954,7 +958,7 @@
             // RIP
             // 
             this.RIP.AutoSize = true;
-            this.RIP.Location = new System.Drawing.Point(112, 569);
+            this.RIP.Location = new System.Drawing.Point(179, 548);
             this.RIP.Margin = new System.Windows.Forms.Padding(2);
             this.RIP.Name = "RIP";
             this.RIP.Size = new System.Drawing.Size(44, 17);
@@ -965,7 +969,7 @@
             // MACSec
             // 
             this.MACSec.AutoSize = true;
-            this.MACSec.Location = new System.Drawing.Point(416, 569);
+            this.MACSec.Location = new System.Drawing.Point(483, 548);
             this.MACSec.Margin = new System.Windows.Forms.Padding(2);
             this.MACSec.Name = "MACSec";
             this.MACSec.Size = new System.Drawing.Size(68, 17);
@@ -976,7 +980,7 @@
             // BGP
             // 
             this.BGP.AutoSize = true;
-            this.BGP.Location = new System.Drawing.Point(272, 569);
+            this.BGP.Location = new System.Drawing.Point(339, 548);
             this.BGP.Margin = new System.Windows.Forms.Padding(2);
             this.BGP.Name = "BGP";
             this.BGP.Size = new System.Drawing.Size(48, 17);
@@ -987,7 +991,7 @@
             // VRRP
             // 
             this.VRRP.AutoSize = true;
-            this.VRRP.Location = new System.Drawing.Point(578, 569);
+            this.VRRP.Location = new System.Drawing.Point(645, 548);
             this.VRRP.Margin = new System.Windows.Forms.Padding(2);
             this.VRRP.Name = "VRRP";
             this.VRRP.Size = new System.Drawing.Size(56, 17);
@@ -998,7 +1002,7 @@
             // SPAN_and_RSPAN
             // 
             this.SPAN_and_RSPAN.AutoSize = true;
-            this.SPAN_and_RSPAN.Location = new System.Drawing.Point(688, 569);
+            this.SPAN_and_RSPAN.Location = new System.Drawing.Point(827, 548);
             this.SPAN_and_RSPAN.Margin = new System.Windows.Forms.Padding(2);
             this.SPAN_and_RSPAN.Name = "SPAN_and_RSPAN";
             this.SPAN_and_RSPAN.Size = new System.Drawing.Size(122, 17);
@@ -1009,7 +1013,7 @@
             // ERSPAN
             // 
             this.ERSPAN.AutoSize = true;
-            this.ERSPAN.Location = new System.Drawing.Point(688, 590);
+            this.ERSPAN.Location = new System.Drawing.Point(827, 569);
             this.ERSPAN.Margin = new System.Windows.Forms.Padding(2);
             this.ERSPAN.Name = "ERSPAN";
             this.ERSPAN.Size = new System.Drawing.Size(70, 17);
@@ -1020,7 +1024,7 @@
             // DAI
             // 
             this.DAI.AutoSize = true;
-            this.DAI.Location = new System.Drawing.Point(578, 590);
+            this.DAI.Location = new System.Drawing.Point(645, 569);
             this.DAI.Margin = new System.Windows.Forms.Padding(2);
             this.DAI.Name = "DAI";
             this.DAI.Size = new System.Drawing.Size(44, 17);
@@ -1031,7 +1035,7 @@
             // IS_IS
             // 
             this.IS_IS.AutoSize = true;
-            this.IS_IS.Location = new System.Drawing.Point(272, 590);
+            this.IS_IS.Location = new System.Drawing.Point(339, 569);
             this.IS_IS.Margin = new System.Windows.Forms.Padding(2);
             this.IS_IS.Name = "IS_IS";
             this.IS_IS.Size = new System.Drawing.Size(52, 17);
@@ -1042,7 +1046,7 @@
             // MACSec_128_bit
             // 
             this.MACSec_128_bit.AutoSize = true;
-            this.MACSec_128_bit.Location = new System.Drawing.Point(416, 590);
+            this.MACSec_128_bit.Location = new System.Drawing.Point(483, 569);
             this.MACSec_128_bit.Margin = new System.Windows.Forms.Padding(2);
             this.MACSec_128_bit.Name = "MACSec_128_bit";
             this.MACSec_128_bit.Size = new System.Drawing.Size(109, 17);
@@ -1053,7 +1057,7 @@
             // Static_Routing
             // 
             this.Static_Routing.AutoSize = true;
-            this.Static_Routing.Location = new System.Drawing.Point(112, 590);
+            this.Static_Routing.Location = new System.Drawing.Point(179, 569);
             this.Static_Routing.Margin = new System.Windows.Forms.Padding(2);
             this.Static_Routing.Name = "Static_Routing";
             this.Static_Routing.Size = new System.Drawing.Size(96, 17);
@@ -1064,7 +1068,7 @@
             // EEM
             // 
             this.EEM.AutoSize = true;
-            this.EEM.Location = new System.Drawing.Point(688, 611);
+            this.EEM.Location = new System.Drawing.Point(827, 590);
             this.EEM.Margin = new System.Windows.Forms.Padding(2);
             this.EEM.Name = "EEM";
             this.EEM.Size = new System.Drawing.Size(49, 17);
@@ -1075,7 +1079,7 @@
             // uRPF
             // 
             this.uRPF.AutoSize = true;
-            this.uRPF.Location = new System.Drawing.Point(578, 611);
+            this.uRPF.Location = new System.Drawing.Point(645, 590);
             this.uRPF.Margin = new System.Windows.Forms.Padding(2);
             this.uRPF.Name = "uRPF";
             this.uRPF.Size = new System.Drawing.Size(53, 17);
@@ -1086,7 +1090,7 @@
             // VXLAN
             // 
             this.VXLAN.AutoSize = true;
-            this.VXLAN.Location = new System.Drawing.Point(272, 611);
+            this.VXLAN.Location = new System.Drawing.Point(339, 590);
             this.VXLAN.Margin = new System.Windows.Forms.Padding(2);
             this.VXLAN.Name = "VXLAN";
             this.VXLAN.Size = new System.Drawing.Size(61, 17);
@@ -1097,7 +1101,7 @@
             // MACSec_256_bit
             // 
             this.MACSec_256_bit.AutoSize = true;
-            this.MACSec_256_bit.Location = new System.Drawing.Point(416, 611);
+            this.MACSec_256_bit.Location = new System.Drawing.Point(483, 590);
             this.MACSec_256_bit.Margin = new System.Windows.Forms.Padding(2);
             this.MACSec_256_bit.Name = "MACSec_256_bit";
             this.MACSec_256_bit.Size = new System.Drawing.Size(109, 17);
@@ -1108,7 +1112,7 @@
             // OSPF_Routed_Access
             // 
             this.OSPF_Routed_Access.AutoSize = true;
-            this.OSPF_Routed_Access.Location = new System.Drawing.Point(112, 611);
+            this.OSPF_Routed_Access.Location = new System.Drawing.Point(179, 590);
             this.OSPF_Routed_Access.Margin = new System.Windows.Forms.Padding(2);
             this.OSPF_Routed_Access.Name = "OSPF_Routed_Access";
             this.OSPF_Routed_Access.Size = new System.Drawing.Size(136, 17);
@@ -1119,7 +1123,7 @@
             // Automation
             // 
             this.Automation.AutoSize = true;
-            this.Automation.Location = new System.Drawing.Point(688, 632);
+            this.Automation.Location = new System.Drawing.Point(827, 611);
             this.Automation.Margin = new System.Windows.Forms.Padding(2);
             this.Automation.Name = "Automation";
             this.Automation.Size = new System.Drawing.Size(79, 17);
@@ -1130,7 +1134,7 @@
             // _802_1x
             // 
             this._802_1x.AutoSize = true;
-            this._802_1x.Location = new System.Drawing.Point(578, 632);
+            this._802_1x.Location = new System.Drawing.Point(645, 611);
             this._802_1x.Margin = new System.Windows.Forms.Padding(2);
             this._802_1x.Name = "_802_1x";
             this._802_1x.Size = new System.Drawing.Size(61, 17);
@@ -1141,7 +1145,7 @@
             // PBR
             // 
             this.PBR.AutoSize = true;
-            this.PBR.Location = new System.Drawing.Point(272, 632);
+            this.PBR.Location = new System.Drawing.Point(339, 611);
             this.PBR.Margin = new System.Windows.Forms.Padding(2);
             this.PBR.Name = "PBR";
             this.PBR.Size = new System.Drawing.Size(48, 17);
@@ -1152,7 +1156,7 @@
             // Private_VLAN
             // 
             this.Private_VLAN.AutoSize = true;
-            this.Private_VLAN.Location = new System.Drawing.Point(416, 632);
+            this.Private_VLAN.Location = new System.Drawing.Point(483, 611);
             this.Private_VLAN.Margin = new System.Windows.Forms.Padding(2);
             this.Private_VLAN.Name = "Private_VLAN";
             this.Private_VLAN.Size = new System.Drawing.Size(93, 17);
@@ -1163,7 +1167,7 @@
             // OSPF_Full
             // 
             this.OSPF_Full.AutoSize = true;
-            this.OSPF_Full.Location = new System.Drawing.Point(112, 632);
+            this.OSPF_Full.Location = new System.Drawing.Point(179, 611);
             this.OSPF_Full.Margin = new System.Windows.Forms.Padding(2);
             this.OSPF_Full.Name = "OSPF_Full";
             this.OSPF_Full.Size = new System.Drawing.Size(76, 17);
@@ -1181,32 +1185,84 @@
             this.label6.TabIndex = 165;
             this.label6.Text = "Nhập dữ liệu";
             // 
+            // label9
+            // 
+            this.label9.Location = new System.Drawing.Point(0, 0);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(100, 23);
+            this.label9.TabIndex = 0;
+            // 
+            // label10
+            // 
+            this.label10.Location = new System.Drawing.Point(0, 0);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(100, 23);
+            this.label10.TabIndex = 0;
+            // 
             // name
             // 
-            this.name.HideSelection = false;
-            this.name.Location = new System.Drawing.Point(262, 77);
+            this.name.Location = new System.Drawing.Point(271, 77);
             this.name.Margin = new System.Windows.Forms.Padding(2);
             this.name.Name = "name";
             this.name.Size = new System.Drawing.Size(129, 20);
             this.name.TabIndex = 167;
             // 
-            // label9
+            // label17
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(259, 62);
-            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(35, 13);
-            this.label9.TabIndex = 166;
-            this.label9.Text = "Name";
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(268, 62);
+            this.label17.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(35, 13);
+            this.label17.TabIndex = 166;
+            this.label17.Text = "Name";
+            // 
+            // Price
+            // 
+            this.Price.Location = new System.Drawing.Point(468, 77);
+            this.Price.Margin = new System.Windows.Forms.Padding(2);
+            this.Price.Name = "Price";
+            this.Price.Size = new System.Drawing.Size(129, 20);
+            this.Price.TabIndex = 169;
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(465, 62);
+            this.label18.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(31, 13);
+            this.label18.TabIndex = 168;
+            this.label18.Text = "Price";
+            // 
+            // btnReset
+            // 
+            this.btnReset.Location = new System.Drawing.Point(651, 476);
+            this.btnReset.Margin = new System.Windows.Forms.Padding(2);
+            this.btnReset.Name = "btnReset";
+            this.btnReset.Size = new System.Drawing.Size(93, 41);
+            this.btnReset.TabIndex = 170;
+            this.btnReset.Text = "Làm mới";
+            this.btnReset.UseVisualStyleBackColor = true;
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
+            // 
+            // alert
+            // 
+            this.alert.AutoSize = true;
+            this.alert.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.alert.ForeColor = System.Drawing.Color.DarkRed;
+            this.alert.Location = new System.Drawing.Point(836, 30);
+            this.alert.Name = "alert";
+            this.alert.Size = new System.Drawing.Size(0, 25);
+            this.alert.TabIndex = 171;
             // 
             // radbutEssential
             // 
             this.radbutEssential.AutoSize = true;
-            this.radbutEssential.Location = new System.Drawing.Point(828, 579);
+            this.radbutEssential.Location = new System.Drawing.Point(802, 488);
             this.radbutEssential.Name = "radbutEssential";
             this.radbutEssential.Size = new System.Drawing.Size(67, 17);
-            this.radbutEssential.TabIndex = 168;
+            this.radbutEssential.TabIndex = 172;
             this.radbutEssential.TabStop = true;
             this.radbutEssential.Text = "Essential";
             this.radbutEssential.UseVisualStyleBackColor = true;
@@ -1214,68 +1270,27 @@
             // radbutAdv
             // 
             this.radbutAdv.AutoSize = true;
-            this.radbutAdv.Location = new System.Drawing.Point(828, 556);
+            this.radbutAdv.Location = new System.Drawing.Point(916, 488);
             this.radbutAdv.Name = "radbutAdv";
             this.radbutAdv.Size = new System.Drawing.Size(77, 17);
-            this.radbutAdv.TabIndex = 169;
+            this.radbutAdv.TabIndex = 173;
             this.radbutAdv.TabStop = true;
-            this.radbutAdv.Text = "Adventage";
+            this.radbutAdv.Text = "Advantage";
             this.radbutAdv.UseVisualStyleBackColor = true;
-            // 
-            // alert
-            // 
-            this.alert.AutoSize = true;
-            this.alert.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.alert.ForeColor = System.Drawing.Color.DarkRed;
-            this.alert.Location = new System.Drawing.Point(719, 16);
-            this.alert.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.alert.Name = "alert";
-            this.alert.Size = new System.Drawing.Size(0, 24);
-            this.alert.TabIndex = 170;
-            // 
-            // btnReset
-            // 
-            this.btnReset.Location = new System.Drawing.Point(934, 611);
-            this.btnReset.Margin = new System.Windows.Forms.Padding(2);
-            this.btnReset.Name = "btnReset";
-            this.btnReset.Size = new System.Drawing.Size(93, 41);
-            this.btnReset.TabIndex = 171;
-            this.btnReset.Text = "Làm mới";
-            this.btnReset.UseVisualStyleBackColor = true;
-            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
-            // 
-            // Price
-            // 
-            this.Price.HideSelection = false;
-            this.Price.Location = new System.Drawing.Point(418, 77);
-            this.Price.Margin = new System.Windows.Forms.Padding(2);
-            this.Price.Name = "Price";
-            this.Price.Size = new System.Drawing.Size(129, 20);
-            this.Price.TabIndex = 172;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(416, 62);
-            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(31, 13);
-            this.label10.TabIndex = 173;
-            this.label10.Text = "Price";
             // 
             // AddForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1185, 752);
-            this.Controls.Add(this.label10);
-            this.Controls.Add(this.Price);
-            this.Controls.Add(this.btnReset);
-            this.Controls.Add(this.alert);
+            this.ClientSize = new System.Drawing.Size(1185, 749);
             this.Controls.Add(this.radbutAdv);
             this.Controls.Add(this.radbutEssential);
+            this.Controls.Add(this.alert);
+            this.Controls.Add(this.btnReset);
+            this.Controls.Add(this.Price);
+            this.Controls.Add(this.label18);
             this.Controls.Add(this.name);
-            this.Controls.Add(this.label9);
+            this.Controls.Add(this.label17);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.Automation);
             this.Controls.Add(this._802_1x);
@@ -1440,7 +1455,7 @@
         private System.Windows.Forms.TextBox HPOE_75_W_Port;
         private System.Windows.Forms.TextBox RAM;
         private System.Windows.Forms.TextBox _Flexible_NetFlow__FNF_entries;
-        private System.Windows.Forms.TextBox name;
+        
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
@@ -1507,14 +1522,21 @@
         private System.Windows.Forms.CheckBox PBR;
         private System.Windows.Forms.CheckBox Private_VLAN;
         private System.Windows.Forms.CheckBox OSPF_Full;
-        private System.Windows.Forms.RadioButton radbutEssential;
-        private System.Windows.Forms.RadioButton radbutAdv;
+        //private System.Windows.Forms.RadioButton radbutEssential;
+        //private System.Windows.Forms.RadioButton radbutAdv;
 
         private System.Windows.Forms.Button btnAdd;
-        private System.Windows.Forms.Label alert;
-        private System.Windows.Forms.Button btnReset;
-        private System.Windows.Forms.TextBox Price;
+        
+       
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.TextBox name;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.TextBox Price;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Button btnReset;
+        private System.Windows.Forms.Label alert;
+        private System.Windows.Forms.RadioButton radbutEssential;
+        private System.Windows.Forms.RadioButton radbutAdv;
     }
 }
 
