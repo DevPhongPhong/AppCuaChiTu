@@ -68,7 +68,7 @@
             this.label27 = new System.Windows.Forms.Label();
             this._VLANs_ID = new System.Windows.Forms.TextBox();
             this.label28 = new System.Windows.Forms.Label();
-            this._stacking_ports = new System.Windows.Forms.TextBox();
+            this._20G_QSFP_plus_stacking_ports = new System.Windows.Forms.TextBox();
             this.label29 = new System.Windows.Forms.Label();
             this._1G_10G_RJ45_SFP_combo = new System.Windows.Forms.TextBox();
             this.label30 = new System.Windows.Forms.Label();
@@ -202,7 +202,7 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(73, 13);
             this.label3.TabIndex = 6;
-            this.label3.Text = "stacking ports";
+            this.label3.Text = "20G QSFP+ stacking ports";
             // 
             // _1G_SFP_plus_port_
             // 
@@ -512,13 +512,13 @@
             this.label28.TabIndex = 40;
             this.label28.Text = "VLAN Interfaces (SVI, for L3 Sw)";
             // 
-            // _stacking_ports
+            // _20G_QSFP_plus_stacking_ports
             // 
-            this._stacking_ports.Location = new System.Drawing.Point(110, 400);
-            this._stacking_ports.Margin = new System.Windows.Forms.Padding(2);
-            this._stacking_ports.Name = "_stacking_ports";
-            this._stacking_ports.Size = new System.Drawing.Size(137, 20);
-            this._stacking_ports.TabIndex = 39;
+            this._20G_QSFP_plus_stacking_ports.Location = new System.Drawing.Point(110, 400);
+            this._20G_QSFP_plus_stacking_ports.Margin = new System.Windows.Forms.Padding(2);
+            this._20G_QSFP_plus_stacking_ports.Name = "_20G_QSFP_plus_stacking_ports";
+            this._20G_QSFP_plus_stacking_ports.Size = new System.Drawing.Size(137, 20);
+            this._20G_QSFP_plus_stacking_ports.TabIndex = 39;
             // 
             // label29
             // 
@@ -1369,7 +1369,7 @@
             this.Controls.Add(this.label27);
             this.Controls.Add(this._VLANs_ID);
             this.Controls.Add(this.label28);
-            this.Controls.Add(this._stacking_ports);
+            this.Controls.Add(this._20G_QSFP_plus_stacking_ports);
             this.Controls.Add(this.label29);
             this.Controls.Add(this._1G_10G_RJ45_SFP_combo);
             this.Controls.Add(this.label30);
@@ -1431,7 +1431,7 @@
         private System.Windows.Forms.TextBox ForwardingCapacity;
         private System.Windows.Forms.TextBox _QoS_scale_entries;
         private System.Windows.Forms.TextBox _VLANs_ID;
-        private System.Windows.Forms.TextBox _stacking_ports;
+        private System.Windows.Forms.TextBox _20G_QSFP_plus_stacking_ports;
         private System.Windows.Forms.TextBox _1G_10G_RJ45_SFP_combo;
         private System.Windows.Forms.TextBox PoE_Plus_30W_Port;
         private System.Windows.Forms.TextBox SwitchingBandwidth;

@@ -23,6 +23,7 @@ namespace AppCuaChiTu
                 sql = "INSERT INTO Product (" +
                         "name, " +
                         "Branch, " +
+                        "Price, " +
                         "Maximumnumberofunitsinavirtualchassis, " +
                         "_mgig_port_100M_1G_2_5G_BaseT, " +
                         "_1G_SFP_plus_port_, " +
@@ -42,7 +43,7 @@ namespace AppCuaChiTu
                         "ForwardingCapacity, " +
                         "_QoS_scale_entries, " +
                         "_VLANs_ID, " +
-                        "_stacking_ports, " +
+                        "_20G_QSFP_plus_stacking_ports, " +
                         "_1G_10G_RJ45_SFP_combo, " +
                         "PoE_Plus_30W_Port, " +
                         "SwitchingBandwidth, " +
@@ -90,6 +91,7 @@ namespace AppCuaChiTu
                     "VALUES (" +
                         "@name, " +
                         "@Branch, " +
+                        "@Price, " +
                         "@Maximumnumberofunitsinavirtualchassis, " +
                         "@_mgig_port_100M_1G_2_5G_BaseT, " +
                         "@_1G_SFP_plus_port_, " +
@@ -109,7 +111,7 @@ namespace AppCuaChiTu
                         "@ForwardingCapacity, " +
                         "@_QoS_scale_entries, " +
                         "@_VLANs_ID, " +
-                        "@_stacking_ports, " +
+                        "@_20G_QSFP_plus_stacking_ports, " +
                         "@_1G_10G_RJ45_SFP_combo, " +
                         "@PoE_Plus_30W_Port, " +
                         "@SwitchingBandwidth, " +
@@ -158,6 +160,7 @@ namespace AppCuaChiTu
                 {
                     command.Parameters.AddWithValue("@name", p.name);
                     command.Parameters.AddWithValue("@Branch", p.Branch);
+                    command.Parameters.AddWithValue("@Price", p.Price);
                     command.Parameters.AddWithValue("@Maximumnumberofunitsinavirtualchassis", p.Maximumnumberofunitsinavirtualchassis);
                     command.Parameters.AddWithValue("@_mgig_port_100M_1G_2_5G_BaseT", p._mgig_port_100M_1G_2_5G_BaseT);
                     command.Parameters.AddWithValue("@_1G_SFP_plus_port_", p._1G_SFP_plus_port_);
@@ -177,7 +180,7 @@ namespace AppCuaChiTu
                     command.Parameters.AddWithValue("@ForwardingCapacity", p.ForwardingCapacity);
                     command.Parameters.AddWithValue("@_QoS_scale_entries", p._QoS_scale_entries);
                     command.Parameters.AddWithValue("@_VLANs_ID", p._VLANs_ID);
-                    command.Parameters.AddWithValue("@_stacking_ports", p._stacking_ports);
+                    command.Parameters.AddWithValue("@_20G_QSFP_plus_stacking_ports", p._20G_QSFP_plus_stacking_ports);
                     command.Parameters.AddWithValue("@_1G_10G_RJ45_SFP_combo", p._1G_10G_RJ45_SFP_combo);
                     command.Parameters.AddWithValue("@PoE_Plus_30W_Port", p.PoE_Plus_30W_Port);
                     command.Parameters.AddWithValue("@SwitchingBandwidth", p.SwitchingBandwidth);

@@ -31,7 +31,7 @@ namespace AppCuaChiTu
         public float ForwardingCapacity { get; set; }
         public int _QoS_scale_entries { get; set; }
         public int _VLANs_ID { get; set; }
-        public int _stacking_ports { get; set; }
+        public int _20G_QSFP_plus_stacking_ports { get; set; }
         public int _1G_10G_RJ45_SFP_combo { get; set; }
         public int PoE_Plus_30W_Port { get; set; }
         public float SwitchingBandwidth { get; set; }

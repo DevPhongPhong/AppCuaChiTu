@@ -45,7 +45,7 @@ namespace AppCuaChiTu
                                         ForwardingCapacity FLOAT,
                                         _QoS_scale_entries INTEGER,
                                         _VLANs_ID INTEGER,
-                                        _stacking_ports INTEGER,
+                                        _20G_QSFP_plus_stacking_ports INTEGER,
                                         _1G_10G_RJ45_SFP_combo INTEGER,
                                         PoE_Plus_30W_Port INTEGER,
                                         SwitchingBandwidth FLOAT,

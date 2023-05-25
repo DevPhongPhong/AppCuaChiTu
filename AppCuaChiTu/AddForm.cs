@@ -86,8 +86,8 @@ namespace AppCuaChiTu
             tempStatus = int.TryParse(_VLANs_ID.Text.Trim(), out temp);
             p._VLANs_ID = (tempStatus ? temp : -1);
 
-            tempStatus = int.TryParse(_stacking_ports.Text.Trim(), out temp);
-            p._stacking_ports = (tempStatus ? temp : -1);
+            tempStatus = int.TryParse(_20G_QSFP_plus_stacking_ports.Text.Trim(), out temp);
+            p._20G_QSFP_plus_stacking_ports = (tempStatus ? temp : -1);
 
             tempStatus = int.TryParse(_1G_10G_RJ45_SFP_combo.Text.Trim(), out temp);
             p._1G_10G_RJ45_SFP_combo = (tempStatus ? temp : -1);
@@ -237,7 +237,7 @@ namespace AppCuaChiTu
             ForwardingCapacity.Text = "";
             _QoS_scale_entries.Text = "";
             _VLANs_ID.Text = "";
-            _stacking_ports.Text = "";
+            _20G_QSFP_plus_stacking_ports.Text = "";
             _1G_10G_RJ45_SFP_combo.Text = "";
             PoE_Plus_30W_Port.Text = "";
             SwitchingBandwidth.Text = "";
