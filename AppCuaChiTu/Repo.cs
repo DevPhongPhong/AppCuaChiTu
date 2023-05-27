@@ -24,138 +24,134 @@ namespace AppCuaChiTu
                         "name, " +
                         "Branch, " +
                         "Price, " +
-                        "Maximumnumberofunitsinavirtualchassis, " +
-                        "_mgig_port_100M_1G_2_5G_BaseT, " +
-                        "_1G_SFP_plus_port_, " +
-                        "_MAX_IPv6_routes, " +
-                        "_100GE_QSFP28_Ports, " +
-                        "_Multicast_groups, " +
-                        "_MAC_Address_Table, " +
-                        "_20G_QSFP_plus_, " +
-                        "RJ45_SFP_combo_1G, " +
-                        "PoE_15_4WPort, " +
-                        "ForwardingBandwidth, " +
-                        "_ACL_scale_entries, " +
-                        "_VLAN_active, " +
-                        "_1G_SPF_port, " +
-                        "_mgig_port_100M_1G_2_5G_5G, " +
-                        "UPOE_60W_Port, " +
-                        "ForwardingCapacity, " +
-                        "_QoS_scale_entries, " +
-                        "_VLANs_ID, " +
-                        "_20G_QSFP_plus_stacking_ports, " +
-                        "_1G_10G_RJ45_SFP_combo, " +
-                        "PoE_Plus_30W_Port, " +
-                        "SwitchingBandwidth, " +
-                        "_MAX_IPv4_routes, " +
-                        "_40GE_QSFP_plus_Ports, " +
-                        "_1GE_BaseX_SFP_port, " +
-                        "Stack_Members, " +
-                        "_Total_number_of_IPv4_routes_ARP_plus_learned_routes_, " +
-                        "_10GE_SFP_plus_Ports, " +
-                        "_1GE_BaseT_Ports, " +
-                        "Stackable, " +
-                        "_Power_Redundancy, " +
-                        "_Jumbo_Frame_Bytes_, " +
-                        "_10_25G_SFP28, " +
-                        "_mgig_port_1G_2_5G_BaseT, " +
-                        "_95W_802_3bt_PoE, " +
-                        "Flash, " +
-                        "_VLAN_Interfaces_SVI_for_L3_Sw_, " +
-                        "_1G_10G_SFP_plus_, " +
-                        "_mgig_port_100M_1G_2_5G_5G_10G, " +
-                        "HPOE_75_W_Port, " +
-                        "RAM, " +
-                        "_Flexible_NetFlow__FNF_entries, " +
                         "IsAdventageLicense, " +
-                        "RIP, " +
-                        "MACSec, " +
-                        "BGP, " +
-                        "VRRP, " +
-                        "SPAN_and_RSPAN, " +
-                        "ERSPAN, " +
-                        "DAI, " +
-                        "IS_IS, " +
-                        "MACSec_128_bit, " +
+                        "ForwardingBandwidth, " +
+                        "SwitchingBandwidth, " +
+                        "ForwardingCapacity, " +
+                        "RAM, " +
+                        "Flash, " +
+                        "Stackable, " +
+                        "Stack_Members, " +
+                        "Maximumnumberofunitsinavirtualchassis, " +
+                        "PoE_15_4WPort, " +
+                        "PoE_Plus_30W_Port, " +
+                        "UPOE_60W_Port, " +
+                        "HPOE_75_W_Port, " +
+                        "_95W_802_3bt_PoE, " +
+                        "_1GE_BaseT_Ports, " +
+                        "_1GE_BaseX_SFP_port, " +
+                        "_1G_SFP_plus_port_, " +
+                        "RJ45_SFP_combo_1G, " +
+                        "_1G_10G_RJ45_SFP_combo, " +
+                        "_mgig_port_100M_1G_2_5G_5G, " +
+                        "_mgig_port_100M_1G_2_5G_5G_10G, " +
+                        "_mgig_port_1G_2_5G_BaseT, " +
+                        "_mgig_port_100M_1G_2_5G_BaseT, " +
+                        "_20G_QSFP_plus_stacking_ports, " +
+                        "_1G_SPF_port, " +
+                        "_1G_10G_SFP_plus_, " +
+                        "_10_25G_SFP28, " +
+                        "_10GE_SFP_plus_Ports, " +
+                        "_40GE_QSFP_plus_Ports, " +
+                        "_100GE_QSFP28_Ports, " +
+                        "_MAC_Address_Table, " +
+                        "_VLANs_ID, " +
+                        "_VLAN_active, " +
+                        "_VLAN_Interfaces_SVI_for_L3_Sw_, " +
+                        "_Jumbo_Frame_Bytes_, " +
+                        "_Total_number_of_IPv4_routes_ARP_plus_learned_routes_, " +
+                        "_MAX_IPv4_routes, " +
+                        "_MAX_IPv6_routes, " +
+                        "_Multicast_groups, " +
+                        "_QoS_scale_entries, " +
+                        "_ACL_scale_entries, " +
+                        "_Flexible_NetFlow__FNF_entries, " +
+                        "_Power_Redundancy, " +
                         "Static_Routing, " +
-                        "EEM, " +
-                        "uRPF, " +
-                        "VXLAN, " +
-                        "MACSec_256_bit, " +
+                        "RIP, " +
                         "OSPF_Routed_Access, " +
-                        "Automation, " +
-                        "_802_1x, " +
+                        "OSPF_Full, " +
+                        "BGP, " +
+                        "IS_IS, " +
+                        "VXLAN, " +
+                        "MACSec, " +
+                        "MACSec_128_bit, " +
+                        "MACSec_256_bit, " +
                         "PBR, " +
                         "Private_VLAN, " +
-                        "OSPF_Full) " +
+                        "VRRP, " +
+                        "DAI, " +
+                        "uRPF, " +
+                        "_802_1x, " +
+                        "SPAN_and_RSPAN, " +
+                        "ERSPAN, " +
+                        "EEM) " +
                     "VALUES (" +
                         "@name, " +
                         "@Branch, " +
                         "@Price, " +
-                        "@Maximumnumberofunitsinavirtualchassis, " +
-                        "@_mgig_port_100M_1G_2_5G_BaseT, " +
-                        "@_1G_SFP_plus_port_, " +
-                        "@_MAX_IPv6_routes, " +
-                        "@_100GE_QSFP28_Ports, " +
-                        "@_Multicast_groups, " +
-                        "@_MAC_Address_Table, " +
-                        "@_20G_QSFP_plus_, " +
-                        "@RJ45_SFP_combo_1G, " +
-                        "@PoE_15_4WPort, " +
-                        "@ForwardingBandwidth, " +
-                        "@_ACL_scale_entries, " +
-                        "@_VLAN_active, " +
-                        "@_1G_SPF_port, " +
-                        "@_mgig_port_100M_1G_2_5G_5G, " +
-                        "@UPOE_60W_Port, " +
-                        "@ForwardingCapacity, " +
-                        "@_QoS_scale_entries, " +
-                        "@_VLANs_ID, " +
-                        "@_20G_QSFP_plus_stacking_ports, " +
-                        "@_1G_10G_RJ45_SFP_combo, " +
-                        "@PoE_Plus_30W_Port, " +
-                        "@SwitchingBandwidth, " +
-                        "@_MAX_IPv4_routes, " +
-                        "@_40GE_QSFP_plus_Ports, " +
-                        "@_1GE_BaseX_SFP_port, " +
-                        "@Stack_Members, " +
-                        "@_Total_number_of_IPv4_routes_ARP_plus_learned_routes_, " +
-                        "@_10GE_SFP_plus_Ports, " +
-                        "@_1GE_BaseT_Ports, " +
-                        "@Stackable, " +
-                        "@_Power_Redundancy, " +
-                        "@_Jumbo_Frame_Bytes_, " +
-                        "@_10_25G_SFP28, " +
-                        "@_mgig_port_1G_2_5G_BaseT, " +
-                        "@_95W_802_3bt_PoE, " +
-                        "@Flash, " +
-                        "@_VLAN_Interfaces_SVI_for_L3_Sw_, " +
-                        "@_1G_10G_SFP_plus_, " +
-                        "@_mgig_port_100M_1G_2_5G_5G_10G, " +
-                        "@HPOE_75_W_Port, " +
-                        "@RAM, " +
-                        "@_Flexible_NetFlow__FNF_entries, " +
                         "@IsAdventageLicense, " +
-                        "@RIP, " +
-                        "@MACSec, " +
-                        "@BGP, " +
-                        "@VRRP, " +
-                        "@SPAN_and_RSPAN, " +
-                        "@ERSPAN, " +
-                        "@DAI, " +
-                        "@IS_IS, " +
-                        "@MACSec_128_bit, " +
+                        "@ForwardingBandwidth, " +
+                        "@SwitchingBandwidth, " +
+                        "@ForwardingCapacity, " +
+                        "@RAM, " +
+                        "@Flash, " +
+                        "@Stackable, " +
+                        "@Stack_Members, " +
+                        "@Maximumnumberofunitsinavirtualchassis, " +
+                        "@PoE_15_4WPort, " +
+                        "@PoE_Plus_30W_Port, " +
+                        "@UPOE_60W_Port, " +
+                        "@HPOE_75_W_Port, " +
+                        "@_95W_802_3bt_PoE, " +
+                        "@_1GE_BaseT_Ports, " +
+                        "@_1GE_BaseX_SFP_port, " +
+                        "@_1G_SFP_plus_port_, " +
+                        "@RJ45_SFP_combo_1G, " +
+                        "@_1G_10G_RJ45_SFP_combo, " +
+                        "@_mgig_port_100M_1G_2_5G_5G, " +
+                        "@_mgig_port_100M_1G_2_5G_5G_10G, " +
+                        "@_mgig_port_1G_2_5G_BaseT, " +
+                        "@_mgig_port_100M_1G_2_5G_BaseT, " +
+                        "@_20G_QSFP_plus_stacking_ports, " +
+                        "@_1G_SPF_port, " +
+                        "@_1G_10G_SFP_plus_, " +
+                        "@_10_25G_SFP28, " +
+                        "@_10GE_SFP_plus_Ports, " +
+                        "@_40GE_QSFP_plus_Ports, " +
+                        "@_100GE_QSFP28_Ports, " +
+                        "@_MAC_Address_Table, " +
+                        "@_VLANs_ID, " +
+                        "@_VLAN_active, " +
+                        "@_VLAN_Interfaces_SVI_for_L3_Sw_, " +
+                        "@_Jumbo_Frame_Bytes_, " +
+                        "@_Total_number_of_IPv4_routes_ARP_plus_learned_routes_, " +
+                        "@_MAX_IPv4_routes, " +
+                        "@_MAX_IPv6_routes, " +
+                        "@_Multicast_groups, " +
+                        "@_QoS_scale_entries, " +
+                        "@_ACL_scale_entries, " +
+                        "@_Flexible_NetFlow__FNF_entries, " +
+                        "@_Power_Redundancy, " +
                         "@Static_Routing, " +
-                        "@EEM, " +
-                        "@uRPF, " +
-                        "@VXLAN, " +
-                        "@MACSec_256_bit, " +
+                        "@RIP, " +
                         "@OSPF_Routed_Access, " +
-                        "@Automation, " +
-                        "@_802_1x, " +
+                        "@OSPF_Full, " +
+                        "@BGP, " +
+                        "@IS_IS, " +
+                        "@VXLAN, " +
+                        "@MACSec, " +
+                        "@MACSec_128_bit, " +
+                        "@MACSec_256_bit, " +
                         "@PBR, " +
                         "@Private_VLAN, " +
-                        "@OSPF_Full " + ");";
+                        "@VRRP, " +
+                        "@DAI, " +
+                        "@uRPF, " +
+                        "@_802_1x, " +
+                        "@SPAN_and_RSPAN, " +
+                        "@ERSPAN, " +
+                        "@EEM);";
                 using (command = new SQLiteCommand(sql, connection))
                 {
                     command.Parameters.AddWithValue("@name", p.name);
@@ -168,7 +164,7 @@ namespace AppCuaChiTu
                     command.Parameters.AddWithValue("@_100GE_QSFP28_Ports", p._100GE_QSFP28_Ports);
                     command.Parameters.AddWithValue("@_Multicast_groups", p._Multicast_groups);
                     command.Parameters.AddWithValue("@_MAC_Address_Table", p._MAC_Address_Table);
-                    command.Parameters.AddWithValue("@_20G_QSFP_plus_", p._20G_QSFP_plus_);
+                    command.Parameters.AddWithValue("@_20G_QSFP_plus_", p._20G_QSFP_plus_stacking_ports);
                     command.Parameters.AddWithValue("@RJ45_SFP_combo_1G", p.RJ45_SFP_combo_1G);
                     command.Parameters.AddWithValue("@PoE_15_4WPort", p.PoE_15_4WPort);
                     command.Parameters.AddWithValue("@ForwardingBandwidth", p.ForwardingBandwidth);
@@ -233,6 +229,165 @@ namespace AppCuaChiTu
         public Repo()
         {
 
+        }
+
+        public List<Product> Gets()
+        {
+            using (connection = new SQLiteConnection(connectionString))
+            {
+                connection.Open();
+                sql = "SELECT * FROM Product";
+                using (command = new SQLiteCommand(sql, connection))
+                {
+                    SQLiteDataReader reader = command.ExecuteReader();
+                    List<Product> products = new List<Product>();
+                    while (reader.Read())
+                    {
+
+                        Product product = new Product();
+
+                        int id = Convert.ToInt32(reader["id"]);
+                        string name = Convert.ToString(reader["name"]);
+                        string Branch = Convert.ToString(reader["Branch"]);
+                        decimal Price = Convert.ToDecimal(reader["Price"]);
+                        bool IsAdventageLicense = Convert.ToBoolean(reader["IsAdventageLicense"]);
+                        double ForwardingBandwidth = Convert.ToDouble(reader["ForwardingBandwidth"]);
+                        double SwitchingBandwidth = Convert.ToDouble(reader["SwitchingBandwidth"]);
+                        double ForwardingCapacity = Convert.ToDouble(reader["ForwardingCapacity"]);
+                        int RAM = Convert.ToInt32(reader["RAM"]);
+                        int Flash = Convert.ToInt32(reader["Flash"]);
+                        int Stackable = Convert.ToInt32(reader["Stackable"]);
+                        int Stack_Members = Convert.ToInt32(reader["Stack_Members"]);
+                        int Maximumnumberofunitsinavirtualchassis = Convert.ToInt32(reader["Maximumnumberofunitsinavirtualchassis"]);
+                        int PoE_15_4WPort = Convert.ToInt32(reader["PoE_15_4WPort"]);
+                        int PoE_Plus_30W_Port = Convert.ToInt32(reader["PoE_Plus_30W_Port"]);
+                        int UPOE_60W_Port = Convert.ToInt32(reader["UPOE_60W_Port"]);
+                        int HPOE_75_W_Port = Convert.ToInt32(reader["HPOE_75_W_Port"]);
+                        int _95W_802_3bt_PoE = Convert.ToInt32(reader["_95W_802_3bt_PoE"]);
+                        int _1GE_BaseT_Ports = Convert.ToInt32(reader["_1GE_BaseT_Ports"]);
+                        int _1GE_BaseX_SFP_port = Convert.ToInt32(reader["_1GE_BaseX_SFP_port"]);
+                        int _1G_SFP_plus_port_ = Convert.ToInt32(reader["_1G_SFP_plus_port_"]);
+                        int RJ45_SFP_combo_1G = Convert.ToInt32(reader["RJ45_SFP_combo_1G"]);
+                        int _1G_10G_RJ45_SFP_combo = Convert.ToInt32(reader["_1G_10G_RJ45_SFP_combo"]);
+                        int _mgig_port_100M_1G_2_5G_5G = Convert.ToInt32(reader["_mgig_port_100M_1G_2_5G_5G"]);
+                        int _mgig_port_100M_1G_2_5G_5G_10G = Convert.ToInt32(reader["_mgig_port_100M_1G_2_5G_5G_10G"]);
+                        int _mgig_port_1G_2_5G_BaseT = Convert.ToInt32(reader["_mgig_port_1G_2_5G_BaseT"]);
+                        int _mgig_port_100M_1G_2_5G_BaseT = Convert.ToInt32(reader["_mgig_port_100M_1G_2_5G_BaseT"]);
+                        int _20G_QSFP_plus_stacking_ports = Convert.ToInt32(reader["_20G_QSFP_plus_stacking_ports"]);
+                        int _1G_SPF_port = Convert.ToInt32(reader["_1G_SPF_port"]);
+                        int _1G_10G_SFP_plus_ = Convert.ToInt32(reader["_1G_10G_SFP_plus_"]);
+                        int _10_25G_SFP28 = Convert.ToInt32(reader["_10_25G_SFP28"]);
+                        int _10GE_SFP_plus_Ports = Convert.ToInt32(reader["_10GE_SFP_plus_Ports"]);
+                        int _40GE_QSFP_plus_Ports = Convert.ToInt32(reader["_40GE_QSFP_plus_Ports"]);
+                        int _100GE_QSFP28_Ports = Convert.ToInt32(reader["_100GE_QSFP28_Ports"]);
+                        int _MAC_Address_Table = Convert.ToInt32(reader["_MAC_Address_Table"]);
+                        int _VLANs_ID = Convert.ToInt32(reader["_VLANs_ID"]);
+                        int _VLAN_active = Convert.ToInt32(reader["_VLAN_active"]);
+                        int _VLAN_Interfaces_SVI_for_L3_Sw_ = Convert.ToInt32(reader["_VLAN_Interfaces_SVI_for_L3_Sw_"]);
+                        double _Jumbo_Frame_Bytes_ = Convert.ToDouble(reader["_Jumbo_Frame_Bytes_"]);
+                        int _Total_number_of_IPv4_routes_ARP_plus_learned_routes_ = Convert.ToInt32(reader["_Total_number_of_IPv4_routes_ARP_plus_learned_routes_"]);
+                        int _MAX_IPv4_routes = Convert.ToInt32(reader["_MAX_IPv4_routes"]);
+                        int _MAX_IPv6_routes = Convert.ToInt32(reader["_MAX_IPv6_routes"]);
+                        int _Multicast_groups = Convert.ToInt32(reader["_Multicast_groups"]);
+                        int _QoS_scale_entries = Convert.ToInt32(reader["_QoS_scale_entries"]);
+                        int _ACL_scale_entries = Convert.ToInt32(reader["_ACL_scale_entries"]);
+                        int _Flexible_NetFlow__FNF_entries = Convert.ToInt32(reader["_Flexible_NetFlow__FNF_entries"]);
+                        int _Power_Redundancy = Convert.ToInt32(reader["_Power_Redundancy"]);
+                        bool Static_Routing = Convert.ToBoolean(reader["Static_Routing"]);
+                        bool RIP = Convert.ToBoolean(reader["RIP"]);
+                        bool OSPF_Routed_Access = Convert.ToBoolean(reader["OSPF_Routed_Access"]);
+                        bool OSPF_Full = Convert.ToBoolean(reader["OSPF_Full"]);
+                        bool BGP = Convert.ToBoolean(reader["BGP"]);
+                        bool IS_IS = Convert.ToBoolean(reader["IS_IS"]);
+                        bool VXLAN = Convert.ToBoolean(reader["VXLAN"]);
+                        bool MACSec = Convert.ToBoolean(reader["MACSec"]);
+                        bool MACSec_128_bit = Convert.ToBoolean(reader["MACSec_128_bit"]);
+                        bool MACSec_256_bit = Convert.ToBoolean(reader["MACSec_256_bit"]);
+                        bool PBR = Convert.ToBoolean(reader["PBR"]);
+                        bool Private_VLAN = Convert.ToBoolean(reader["Private_VLAN"]);
+                        bool VRRP = Convert.ToBoolean(reader["VRRP"]);
+                        bool DAI = Convert.ToBoolean(reader["DAI"]);
+                        bool uRPF = Convert.ToBoolean(reader["uRPF"]);
+                        bool _802_1x = Convert.ToBoolean(reader["_802_1x"]);
+                        bool SPAN_and_RSPAN = Convert.ToBoolean(reader["SPAN_and_RSPAN"]);
+                        bool ERSPAN = Convert.ToBoolean(reader["ERSPAN"]);
+                        bool EEM = Convert.ToBoolean(reader["EEM"]);
+                        bool Automation = Convert.ToBoolean(reader["Automation"]);
+
+                        product.id = id;
+                        product.name = name;
+                        product.Branch = Branch;
+                        product.Price = Price;
+                        product.IsAdventageLicense = IsAdventageLicense;
+                        product.ForwardingBandwidth = ForwardingBandwidth;
+                        product.SwitchingBandwidth = SwitchingBandwidth;
+                        product.ForwardingCapacity = ForwardingCapacity;
+                        product.RAM = RAM;
+                        product.Flash = Flash;
+                        product.Stackable = Stackable;
+                        product.Stack_Members = Stack_Members;
+                        product.Maximumnumberofunitsinavirtualchassis = Maximumnumberofunitsinavirtualchassis;
+                        product.PoE_15_4WPort = PoE_15_4WPort;
+                        product.PoE_Plus_30W_Port = PoE_Plus_30W_Port;
+                        product.UPOE_60W_Port = UPOE_60W_Port;
+                        product.HPOE_75_W_Port = HPOE_75_W_Port;
+                        product._95W_802_3bt_PoE = _95W_802_3bt_PoE;
+                        product._1GE_BaseT_Ports = _1GE_BaseT_Ports;
+                        product._1GE_BaseX_SFP_port = _1GE_BaseX_SFP_port;
+                        product._1G_SFP_plus_port_ = _1G_SFP_plus_port_;
+                        product.RJ45_SFP_combo_1G = RJ45_SFP_combo_1G;
+                        product._1G_10G_RJ45_SFP_combo = _1G_10G_RJ45_SFP_combo;
+                        product._mgig_port_100M_1G_2_5G_5G = _mgig_port_100M_1G_2_5G_5G;
+                        product._mgig_port_100M_1G_2_5G_5G_10G = _mgig_port_100M_1G_2_5G_5G_10G;
+                        product._mgig_port_1G_2_5G_BaseT = _mgig_port_1G_2_5G_BaseT;
+                        product._mgig_port_100M_1G_2_5G_BaseT = _mgig_port_100M_1G_2_5G_BaseT;
+                        product._20G_QSFP_plus_stacking_ports = _20G_QSFP_plus_stacking_ports;
+                        product._1G_SPF_port = _1G_SPF_port;
+                        product._1G_10G_SFP_plus_ = _1G_10G_SFP_plus_;
+                        product._10_25G_SFP28 = _10_25G_SFP28;
+                        product._10GE_SFP_plus_Ports = _10GE_SFP_plus_Ports;
+                        product._40GE_QSFP_plus_Ports = _40GE_QSFP_plus_Ports;
+                        product._100GE_QSFP28_Ports = _100GE_QSFP28_Ports;
+                        product._MAC_Address_Table = _MAC_Address_Table;
+                        product._VLANs_ID = _VLANs_ID;
+                        product._VLAN_active = _VLAN_active;
+                        product._VLAN_Interfaces_SVI_for_L3_Sw_ = _VLAN_Interfaces_SVI_for_L3_Sw_;
+                        product._Jumbo_Frame_Bytes_ = _Jumbo_Frame_Bytes_;
+                        product._Total_number_of_IPv4_routes_ARP_plus_learned_routes_ = _Total_number_of_IPv4_routes_ARP_plus_learned_routes_;
+                        product._MAX_IPv4_routes = _MAX_IPv4_routes;
+                        product._MAX_IPv6_routes = _MAX_IPv6_routes;
+                        product._Multicast_groups = _Multicast_groups;
+                        product._QoS_scale_entries = _QoS_scale_entries;
+                        product._ACL_scale_entries = _ACL_scale_entries;
+                        product._Flexible_NetFlow__FNF_entries = _Flexible_NetFlow__FNF_entries;
+                        product._Power_Redundancy = _Power_Redundancy;
+                        product.Static_Routing = Static_Routing;
+                        product.RIP = RIP;
+                        product.OSPF_Routed_Access = OSPF_Routed_Access;
+                        product.OSPF_Full = OSPF_Full;
+                        product.BGP = BGP;
+                        product.IS_IS = IS_IS;
+                        product.VXLAN = VXLAN;
+                        product.MACSec = MACSec;
+                        product.MACSec_128_bit = MACSec_128_bit;
+                        product.MACSec_256_bit = MACSec_256_bit;
+                        product.PBR = PBR;
+                        product.Private_VLAN = Private_VLAN;
+                        product.VRRP = VRRP;
+                        product.DAI = DAI;
+                        product.uRPF = uRPF;
+                        product._802_1x = _802_1x;
+                        product.SPAN_and_RSPAN = SPAN_and_RSPAN;
+                        product.ERSPAN = ERSPAN;
+                        product.EEM = EEM;
+                        product.Automation = Automation;
+
+                        products.Add(product);
+                    }
+
+                    return products;
+                }
+            }
         }
     }
 }

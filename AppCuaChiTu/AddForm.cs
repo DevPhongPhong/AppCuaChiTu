@@ -57,7 +57,7 @@ namespace AppCuaChiTu
             p._MAC_Address_Table = (tempStatus ? temp : -1);
 
             tempStatus = int.TryParse(_20G_QSFP_plus_.Text.Trim(), out temp);
-            p._20G_QSFP_plus_ = (tempStatus ? temp : -1);
+            p._20G_QSFP_plus_stacking_ports = (tempStatus ? temp : -1);
 
             tempStatus = int.TryParse(ForwardingBandwidth.Text.Trim(), out temp);
             p.ForwardingBandwidth = (tempStatus ? temp : -1);

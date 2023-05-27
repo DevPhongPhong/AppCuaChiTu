@@ -16,5 +16,12 @@ namespace AppCuaChiTu
         {
             InitializeComponent();
         }
+
+        private void load_Click(object sender, EventArgs e)
+        {
+            Repo repo = new Repo();
+            List<Product> products = repo.Gets();
+            dataGridView1.DataSource = products;
+        }
     }
 }
