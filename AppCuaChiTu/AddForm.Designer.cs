@@ -200,7 +200,7 @@
             this.label3.Location = new System.Drawing.Point(110, 381);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(73, 13);
+            this.label3.Size = new System.Drawing.Size(133, 13);
             this.label3.TabIndex = 6;
             this.label3.Text = "20G QSFP+ stacking ports";
             // 
@@ -337,7 +337,6 @@
             this.PoE_15_4WPort.Name = "PoE_15_4WPort";
             this.PoE_15_4WPort.Size = new System.Drawing.Size(152, 20);
             this.PoE_15_4WPort.TabIndex = 19;
-            this.PoE_15_4WPort.Text = "av";
             // 
             // label15
             // 
@@ -356,7 +355,6 @@
             this.ForwardingBandwidth.Name = "ForwardingBandwidth";
             this.ForwardingBandwidth.Size = new System.Drawing.Size(135, 20);
             this.ForwardingBandwidth.TabIndex = 17;
-            this.ForwardingBandwidth.Text = "e ";
             // 
             // label16
             // 
@@ -1259,6 +1257,7 @@
             // radbutEssential
             // 
             this.radbutEssential.AutoSize = true;
+            this.radbutEssential.Checked = true;
             this.radbutEssential.Location = new System.Drawing.Point(802, 488);
             this.radbutEssential.Name = "radbutEssential";
             this.radbutEssential.Size = new System.Drawing.Size(67, 17);
@@ -1274,7 +1273,6 @@
             this.radbutAdv.Name = "radbutAdv";
             this.radbutAdv.Size = new System.Drawing.Size(77, 17);
             this.radbutAdv.TabIndex = 173;
-            this.radbutAdv.TabStop = true;
             this.radbutAdv.Text = "Advantage";
             this.radbutAdv.UseVisualStyleBackColor = true;
             // 

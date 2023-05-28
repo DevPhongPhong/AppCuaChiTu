@@ -34,7 +34,6 @@ namespace AppCuaChiTu
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.productBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.branchDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -102,6 +101,7 @@ namespace AppCuaChiTu
             this.eRSPANDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.eEMDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.automationDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.productBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.productBindingSource)).BeginInit();
             this.SuspendLayout();
@@ -124,6 +124,7 @@ namespace AppCuaChiTu
             this.button1.TabIndex = 2;
             this.button1.Text = "Nhập dữ liệu";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -133,6 +134,7 @@ namespace AppCuaChiTu
             this.button2.TabIndex = 3;
             this.button2.Text = "Tra cứu";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // dataGridView1
             // 
@@ -211,10 +213,6 @@ namespace AppCuaChiTu
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(1283, 484);
             this.dataGridView1.TabIndex = 4;
-            // 
-            // productBindingSource
-            // 
-            this.productBindingSource.DataSource = typeof(AppCuaChiTu.Product);
             // 
             // idDataGridViewTextBoxColumn
             // 
@@ -617,6 +615,10 @@ namespace AppCuaChiTu
             this.automationDataGridViewCheckBoxColumn.DataPropertyName = "Automation";
             this.automationDataGridViewCheckBoxColumn.HeaderText = "Automation";
             this.automationDataGridViewCheckBoxColumn.Name = "automationDataGridViewCheckBoxColumn";
+            // 
+            // productBindingSource
+            // 
+            this.productBindingSource.DataSource = typeof(AppCuaChiTu.Product);
             // 
             // MainForm
             // 

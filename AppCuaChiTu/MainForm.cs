@@ -23,5 +23,17 @@ namespace AppCuaChiTu
             List<Product> products = repo.Gets();
             dataGridView1.DataSource = products;
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            AddForm addForm = new AddForm();
+            addForm.ShowDialog();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            SearchForm searhForm = new SearchForm();
+            searhForm.ShowDialog();
+        }
     }
 }
