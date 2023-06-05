@@ -26,7 +26,7 @@ namespace AppCuaChiTu
                                         name TEXT,
                                         Branch TEXT,
                                         Price NUMERIC, 
-                                        IsAdventageLicense BOOLEAN,
+                                        IsAdvantageLicense BOOLEAN,
                                         ForwardingBandwidth NUMERIC,
                                         SwitchingBandwidth NUMERIC,
                                         ForwardingCapacity NUMERIC,

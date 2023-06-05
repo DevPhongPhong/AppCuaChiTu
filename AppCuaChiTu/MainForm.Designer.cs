@@ -240,8 +240,8 @@ namespace AppCuaChiTu
             // 
             // isAdventageLicenseDataGridViewCheckBoxColumn
             // 
-            this.isAdventageLicenseDataGridViewCheckBoxColumn.DataPropertyName = "IsAdventageLicense";
-            this.isAdventageLicenseDataGridViewCheckBoxColumn.HeaderText = "IsAdventageLicense";
+            this.isAdventageLicenseDataGridViewCheckBoxColumn.DataPropertyName = "IsAdvantageLicense";
+            this.isAdventageLicenseDataGridViewCheckBoxColumn.HeaderText = "IsAdvantageLicense";
             this.isAdventageLicenseDataGridViewCheckBoxColumn.Name = "isAdventageLicenseDataGridViewCheckBoxColumn";
             // 
             // forwardingBandwidthDataGridViewTextBoxColumn

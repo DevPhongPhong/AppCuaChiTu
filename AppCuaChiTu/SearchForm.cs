@@ -179,7 +179,7 @@ namespace AppCuaChiTu
             p.PBR = PBR.Checked;
             p.Private_VLAN = Private_VLAN.Checked;
             p.OSPF_Full = OSPF_Full.Checked;
-            p.IsAdventageLicense = radbutAdv.Checked ? true : false;
+            p.IsAdvantageLicense = radbutAdv.Checked ? true : false;
 
             if (string.IsNullOrEmpty(p.name))
             {
@@ -289,7 +289,7 @@ namespace AppCuaChiTu
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string _IsAdventageLicense = radbutAdv.Checked == true ? "1" : "0";
+            string _IsAdvantageLicense = radbutAdv.Checked == true ? "1" : "0";
             string _ForwardingBandwidth = ForwardingBandwidth.Text;
             string _SwitchingBandwidth = SwitchingBandwidth.Text;
             string _ForwardingCapacity = ForwardingCapacity.Text;
@@ -354,7 +354,7 @@ namespace AppCuaChiTu
             string _Automation = Automation.Checked ? "1" : "0";
 
             Repo repo = new Repo();
-            Product p = repo.Search(_IsAdventageLicense,
+            Product p = repo.Search(_IsAdvantageLicense,
                                     _ForwardingBandwidth,
                                     _SwitchingBandwidth,
                                     _ForwardingCapacity,

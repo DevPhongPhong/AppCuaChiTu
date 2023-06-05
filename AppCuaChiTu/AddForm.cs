@@ -179,7 +179,7 @@ namespace AppCuaChiTu
             p.PBR = PBR.Checked;
             p.Private_VLAN = Private_VLAN.Checked;
             p.OSPF_Full = OSPF_Full.Checked;
-            p.IsAdventageLicense = radbutAdv.Checked ? true : false;
+            p.IsAdvantageLicense = radbutAdv.Checked ? true : false;
 
             if (string.IsNullOrEmpty(p.name))
             {

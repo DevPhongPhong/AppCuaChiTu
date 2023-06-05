@@ -12,7 +12,7 @@ namespace AppCuaChiTu
         public string name { get; set; }
         public string Branch { get; set; }
         public decimal Price { get; set; }
-        public bool IsAdventageLicense { get; set; }
+        public bool IsAdvantageLicense { get; set; }
         public double ForwardingBandwidth { get; set; }
         public double SwitchingBandwidth { get; set; }
         public double ForwardingCapacity { get; set; }

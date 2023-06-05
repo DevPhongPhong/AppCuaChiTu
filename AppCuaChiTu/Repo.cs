@@ -24,7 +24,7 @@ namespace AppCuaChiTu
                         "name, " +
                         "Branch, " +
                         "Price, " +
-                        "IsAdventageLicense, " +
+                        "IsAdvantageLicense, " +
                         "ForwardingBandwidth, " +
                         "SwitchingBandwidth, " +
                         "ForwardingCapacity, " +
@@ -85,12 +85,13 @@ namespace AppCuaChiTu
                         "_802_1x, " +
                         "SPAN_and_RSPAN, " +
                         "ERSPAN, " +
-                        "EEM) " +
+                        "EEM, "+
+                        "Automation) " +
                     "VALUES (" +
                         "@name, " +
                         "@Branch, " +
                         "@Price, " +
-                        "@IsAdventageLicense, " +
+                        "@IsAdvantageLicense, " +
                         "@ForwardingBandwidth, " +
                         "@SwitchingBandwidth, " +
                         "@ForwardingCapacity, " +
@@ -151,7 +152,8 @@ namespace AppCuaChiTu
                         "@_802_1x, " +
                         "@SPAN_and_RSPAN, " +
                         "@ERSPAN, " +
-                        "@EEM);";
+                        "@EEM, "+
+                        "@Automation); ";
                 using (command = new SQLiteCommand(sql, connection))
                 {
                     command.Parameters.AddWithValue("@name", p.name);
@@ -200,7 +202,7 @@ namespace AppCuaChiTu
                     command.Parameters.AddWithValue("@HPOE_75_W_Port", p.HPOE_75_W_Port);
                     command.Parameters.AddWithValue("@RAM", p.RAM);
                     command.Parameters.AddWithValue("@_Flexible_NetFlow__FNF_entries", p._Flexible_NetFlow__FNF_entries);
-                    command.Parameters.AddWithValue("@IsAdventageLicense", p.IsAdventageLicense);
+                    command.Parameters.AddWithValue("@IsAdvantageLicense", p.IsAdvantageLicense);
                     command.Parameters.AddWithValue("@RIP", p.RIP);
                     command.Parameters.AddWithValue("@MACSec", p.MACSec);
                     command.Parameters.AddWithValue("@BGP", p.BGP);
@@ -251,7 +253,7 @@ namespace AppCuaChiTu
             }
         }
 
-        public Product Search(   string IsAdventageLicense,
+        public Product Search(   string IsAdvantageLicense,
                                  string ForwardingBandwidth,
                                  string SwitchingBandwidth,
                                  string ForwardingCapacity,
@@ -319,7 +321,7 @@ namespace AppCuaChiTu
             {
                 connection.Open();
                 sql = "SELECT * FROM Product WHERE " +
-                        (!string.IsNullOrEmpty(IsAdventageLicense) ? "IsAdventageLicense = " + IsAdventageLicense +" AND \n ":"")+
+                        (!string.IsNullOrEmpty(IsAdvantageLicense) ? "IsAdvantageLicense = " + IsAdvantageLicense +" AND \n ":"")+
                         (!string.IsNullOrEmpty(ForwardingBandwidth) ? "ForwardingBandwidth >= " + ForwardingBandwidth +" AND \n ":"")+
                         (!string.IsNullOrEmpty(SwitchingBandwidth) ? "SwitchingBandwidth >= " + SwitchingBandwidth +" AND \n ":"")+
                         (!string.IsNullOrEmpty(ForwardingCapacity) ? "ForwardingCapacity >= " + ForwardingCapacity +" AND \n ":"")+
@@ -403,7 +405,7 @@ namespace AppCuaChiTu
             string name = Convert.ToString(reader["name"]);
             string Branch = Convert.ToString(reader["Branch"]);
             decimal Price = Convert.ToDecimal(reader["Price"]);
-            bool IsAdventageLicense = Convert.ToBoolean(reader["IsAdventageLicense"]);
+            bool IsAdvantageLicense = Convert.ToBoolean(reader["IsAdvantageLicense"]);
             double ForwardingBandwidth = Convert.ToDouble(reader["ForwardingBandwidth"]);
             double SwitchingBandwidth = Convert.ToDouble(reader["SwitchingBandwidth"]);
             double ForwardingCapacity = Convert.ToDouble(reader["ForwardingCapacity"]);
@@ -471,7 +473,7 @@ namespace AppCuaChiTu
             product.name = name;
             product.Branch = Branch;
             product.Price = Price;
-            product.IsAdventageLicense = IsAdventageLicense;
+            product.IsAdvantageLicense = IsAdvantageLicense;
             product.ForwardingBandwidth = ForwardingBandwidth;
             product.SwitchingBandwidth = SwitchingBandwidth;
             product.ForwardingCapacity = ForwardingCapacity;
