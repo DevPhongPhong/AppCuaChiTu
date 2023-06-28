@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Windows.Forms;
 
 namespace AppCuaChiTu
@@ -11,7 +12,10 @@ namespace AppCuaChiTu
         [STAThread]
         static void Main()
         {
-            CreateSqliteDbExtension.Create();
+            if (!File.Exists("D:\\mydb.sqlite"))
+            {
+                CreateSqliteDbExtension.Create();
+            }
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);

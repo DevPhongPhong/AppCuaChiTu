@@ -13,15 +13,17 @@ namespace AppCuaChiTu
         public static void Create()
         {
             string filename = "D:\\mydb.sqlite";
+            string connectionString = $"Data Source={filename};Version=3;";
             if (!File.Exists(filename))
             {
-                string connectionString = "Data Source=D:\\mydb.sqlite;Version=3;";
                 SQLiteConnection.CreateFile(filename);
-                using (var connection = new SQLiteConnection(connectionString))
-                {
-                    connection.Open();
-                    // tạo bảng
-                    string sql = @"CREATE TABLE Product(    
+            }
+            using (var connection = new SQLiteConnection(connectionString))
+            {
+                connection.Open();
+                // tạo bảng
+                string sql = @"DROP TABLE IF EXISTS Product;
+                                   CREATE TABLE Product(    
                                         id INTEGER PRIMARY KEY AUTOINCREMENT,
                                         name TEXT,
                                         Branch TEXT,
@@ -91,10 +93,9 @@ namespace AppCuaChiTu
                                         Automation BOOLEAN
                                     )";
 
-                    using (var command = new SQLiteCommand(sql, connection))
-                    {
-                        command.ExecuteNonQuery();
-                    }
+                using (var command = new SQLiteCommand(sql, connection))
+                {
+                    command.ExecuteNonQuery();
                 }
             }
         }

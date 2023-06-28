@@ -85,7 +85,7 @@ namespace AppCuaChiTu
                         "_802_1x, " +
                         "SPAN_and_RSPAN, " +
                         "ERSPAN, " +
-                        "EEM, "+
+                        "EEM, " +
                         "Automation) " +
                     "VALUES (" +
                         "@name, " +
@@ -152,7 +152,7 @@ namespace AppCuaChiTu
                         "@_802_1x, " +
                         "@SPAN_and_RSPAN, " +
                         "@ERSPAN, " +
-                        "@EEM, "+
+                        "@EEM, " +
                         "@Automation); ";
                 using (command = new SQLiteCommand(sql, connection))
                 {
@@ -238,10 +238,22 @@ namespace AppCuaChiTu
             using (connection = new SQLiteConnection(connectionString))
             {
                 connection.Open();
-                sql = "SELECT * FROM Product";
+                sql = "SELECT * FROM Product ;";
                 using (command = new SQLiteCommand(sql, connection))
                 {
-                    SQLiteDataReader reader = command.ExecuteReader();
+                    while (true)
+                    {
+                        try
+                        {
+                            reader = command.ExecuteReader();
+                            break;
+                        }
+                        catch (SQLiteException e)
+                        {
+                            CreateSqliteDbExtension.Create();
+                        }
+                    }
+                    if (reader == null) return null;
                     List<Product> products = new List<Product>();
                     while (reader.Read())
                     {
@@ -253,7 +265,10 @@ namespace AppCuaChiTu
             }
         }
 
-        public Product Search(   string IsAdvantageLicense,
+        public Product Search(string name,
+                                 string Branch,
+                                 string Price,
+                                 string IsAdvantageLicense,
                                  string ForwardingBandwidth,
                                  string SwitchingBandwidth,
                                  string ForwardingCapacity,
@@ -320,71 +335,74 @@ namespace AppCuaChiTu
             using (connection = new SQLiteConnection(connectionString))
             {
                 connection.Open();
-                sql = "SELECT * FROM Product WHERE " +
-                        (!string.IsNullOrEmpty(IsAdvantageLicense) ? "IsAdvantageLicense = " + IsAdvantageLicense +" AND \n ":"")+
-                        (!string.IsNullOrEmpty(ForwardingBandwidth) ? "ForwardingBandwidth >= " + ForwardingBandwidth +" AND \n ":"")+
-                        (!string.IsNullOrEmpty(SwitchingBandwidth) ? "SwitchingBandwidth >= " + SwitchingBandwidth +" AND \n ":"")+
-                        (!string.IsNullOrEmpty(ForwardingCapacity) ? "ForwardingCapacity >= " + ForwardingCapacity +" AND \n ":"")+
-                        (!string.IsNullOrEmpty(RAM) ? "RAM >= " + RAM +" AND \n ":"")+
-                        (!string.IsNullOrEmpty(Flash) ? "Flash >= " + Flash +" AND \n ":"")+
-                        (!string.IsNullOrEmpty(Stackable) ? "Stackable >= " + Stackable +" AND \n ":"")+
-                        (!string.IsNullOrEmpty(Stack_Members) ? "Stack_Members >= " + Stack_Members +" AND \n ":"")+
-                        (!string.IsNullOrEmpty(Maximumnumberofunitsinavirtualchassis) ? "Maximumnumberofunitsinavirtualchassis >= " + Maximumnumberofunitsinavirtualchassis +" AND \n ":"")+
-                        (!string.IsNullOrEmpty(PoE_15_4WPort) ? "PoE_15_4WPort >= " + PoE_15_4WPort +" AND \n ":"")+
-                        (!string.IsNullOrEmpty(PoE_Plus_30W_Port) ? "PoE_Plus_30W_Port >= " + PoE_Plus_30W_Port +" AND \n ":"")+
-                        (!string.IsNullOrEmpty(UPOE_60W_Port) ? "UPOE_60W_Port >= " + UPOE_60W_Port +" AND \n ":"")+
-                        (!string.IsNullOrEmpty(HPOE_75_W_Port) ? "HPOE_75_W_Port >= " + HPOE_75_W_Port +" AND \n ":"")+
-                        (!string.IsNullOrEmpty(_95W_802_3bt_PoE) ? "_95W_802_3bt_PoE >= " + _95W_802_3bt_PoE +" AND \n ":"")+
-                        (!string.IsNullOrEmpty(_1GE_BaseT_Ports) ? "_1GE_BaseT_Ports >= " + _1GE_BaseT_Ports +" AND \n ":"")+
-                        (!string.IsNullOrEmpty(_1GE_BaseX_SFP_port) ? "_1GE_BaseX_SFP_port >= " + _1GE_BaseX_SFP_port +" AND \n ":"")+
-                        (!string.IsNullOrEmpty(_1G_SFP_plus_port_) ? "_1G_SFP_plus_port_ >= " + _1G_SFP_plus_port_ +" AND \n ":"")+
-                        (!string.IsNullOrEmpty(RJ45_SFP_combo_1G) ? "RJ45_SFP_combo_1G >= " + RJ45_SFP_combo_1G +" AND \n ":"")+
-                        (!string.IsNullOrEmpty(_1G_10G_RJ45_SFP_combo) ? "_1G_10G_RJ45_SFP_combo >= " + _1G_10G_RJ45_SFP_combo +" AND \n ":"")+
-                        (!string.IsNullOrEmpty(_mgig_port_100M_1G_2_5G_5G) ? "_mgig_port_100M_1G_2_5G_5G >= " + _mgig_port_100M_1G_2_5G_5G +" AND \n ":"")+
-                        (!string.IsNullOrEmpty(_mgig_port_100M_1G_2_5G_5G_10G) ? "_mgig_port_100M_1G_2_5G_5G_10G >= " + _mgig_port_100M_1G_2_5G_5G_10G +" AND \n ":"")+
-                        (!string.IsNullOrEmpty(_mgig_port_1G_2_5G_BaseT) ? "_mgig_port_1G_2_5G_BaseT >= " + _mgig_port_1G_2_5G_BaseT +" AND \n ":"")+
-                        (!string.IsNullOrEmpty(_mgig_port_100M_1G_2_5G_BaseT) ? "_mgig_port_100M_1G_2_5G_BaseT >= " + _mgig_port_100M_1G_2_5G_BaseT +" AND \n ":"")+
-                        (!string.IsNullOrEmpty(_20G_QSFP_plus_stacking_ports) ? "_20G_QSFP_plus_stacking_ports >= " + _20G_QSFP_plus_stacking_ports +" AND \n ":"")+
-                        (!string.IsNullOrEmpty(_1G_SPF_port) ? "_1G_SPF_port >= " + _1G_SPF_port +" AND \n ":"")+
-                        (!string.IsNullOrEmpty(_1G_10G_SFP_plus_) ? "_1G_10G_SFP_plus_ >= " + _1G_10G_SFP_plus_ +" AND \n ":"")+
-                        (!string.IsNullOrEmpty(_10_25G_SFP28) ? "_10_25G_SFP28 >= " + _10_25G_SFP28 +" AND \n ":"")+
-                        (!string.IsNullOrEmpty(_10GE_SFP_plus_Ports) ? "_10GE_SFP_plus_Ports >= " + _10GE_SFP_plus_Ports +" AND \n ":"")+
-                        (!string.IsNullOrEmpty(_40GE_QSFP_plus_Ports) ? "_40GE_QSFP_plus_Ports >= " + _40GE_QSFP_plus_Ports +" AND \n ":"")+
-                        (!string.IsNullOrEmpty(_100GE_QSFP28_Ports) ? "_100GE_QSFP28_Ports >= " + _100GE_QSFP28_Ports +" AND \n ":"")+
-                        (!string.IsNullOrEmpty(_MAC_Address_Table) ? "_MAC_Address_Table >= " + _MAC_Address_Table +" AND \n ":"")+
-                        (!string.IsNullOrEmpty(_VLANs_ID) ? "_VLANs_ID >= " + _VLANs_ID +" AND \n ":"")+
-                        (!string.IsNullOrEmpty(_VLAN_active) ? "_VLAN_active >= " + _VLAN_active +" AND \n ":"")+
-                        (!string.IsNullOrEmpty(_VLAN_Interfaces_SVI_for_L3_Sw_) ? "_VLAN_Interfaces_SVI_for_L3_Sw_ >= " + _VLAN_Interfaces_SVI_for_L3_Sw_ +" AND \n ":"")+
-                        (!string.IsNullOrEmpty(_Jumbo_Frame_Bytes_) ? "_Jumbo_Frame_Bytes_ >= " + _Jumbo_Frame_Bytes_ +" AND \n ":"")+
-                        (!string.IsNullOrEmpty(_Total_number_of_IPv4_routes_ARP_plus_learned_routes_) ? "_Total_number_of_IPv4_routes_ARP_plus_learned_routes_ >= " + _Total_number_of_IPv4_routes_ARP_plus_learned_routes_ +" AND \n ":"")+
-                        (!string.IsNullOrEmpty(_MAX_IPv4_routes) ? "_MAX_IPv4_routes >= " + _MAX_IPv4_routes +" AND \n ":"")+
-                        (!string.IsNullOrEmpty(_MAX_IPv6_routes) ? "_MAX_IPv6_routes >= " + _MAX_IPv6_routes +" AND \n ":"")+
-                        (!string.IsNullOrEmpty(_Multicast_groups) ? "_Multicast_groups >= " + _Multicast_groups +" AND \n ":"")+
-                        (!string.IsNullOrEmpty(_QoS_scale_entries) ? "_QoS_scale_entries >= " + _QoS_scale_entries +" AND \n ":"")+
-                        (!string.IsNullOrEmpty(_ACL_scale_entries) ? "_ACL_scale_entries >= " + _ACL_scale_entries +" AND \n ":"")+
-                        (!string.IsNullOrEmpty(_Flexible_NetFlow__FNF_entries) ? "_Flexible_NetFlow__FNF_entries >= " + _Flexible_NetFlow__FNF_entries +" AND \n ":"")+
-                        (!string.IsNullOrEmpty(_Power_Redundancy) ? "_Power_Redundancy >= " + _Power_Redundancy +" AND \n ":"")+
-                        (!string.IsNullOrEmpty(Static_Routing) ? "Static_Routing = " + Static_Routing +" AND \n ":"")+
-                        (!string.IsNullOrEmpty(RIP) ? "RIP = " + RIP +" AND \n ":"")+
-                        (!string.IsNullOrEmpty(OSPF_Routed_Access) ? "OSPF_Routed_Access = " + OSPF_Routed_Access +" AND \n ":"")+
-                        (!string.IsNullOrEmpty(OSPF_Full) ? "OSPF_Full = " + OSPF_Full +" AND \n ":"")+
-                        (!string.IsNullOrEmpty(BGP) ? "BGP = " + BGP +" AND \n ":"")+
-                        (!string.IsNullOrEmpty(IS_IS) ? "IS_IS = " + IS_IS +" AND \n ":"")+
-                        (!string.IsNullOrEmpty(VXLAN) ? "VXLAN = " + VXLAN +" AND \n ":"")+
-                        (!string.IsNullOrEmpty(MACSec) ? "MACSec = " + MACSec +" AND \n ":"")+
-                        (!string.IsNullOrEmpty(MACSec_128_bit) ? "MACSec_128_bit = " + MACSec_128_bit +" AND \n ":"")+
-                        (!string.IsNullOrEmpty(MACSec_256_bit) ? "MACSec_256_bit = " + MACSec_256_bit +" AND \n ":"")+
-                        (!string.IsNullOrEmpty(PBR) ? "PBR = " + PBR +" AND \n ":"")+
-                        (!string.IsNullOrEmpty(Private_VLAN) ? "Private_VLAN = " + Private_VLAN +" AND \n ":"")+
-                        (!string.IsNullOrEmpty(VRRP) ? "VRRP = " + VRRP +" AND \n ":"")+
-                        (!string.IsNullOrEmpty(DAI) ? "DAI = " + DAI +" AND \n ":"")+
-                        (!string.IsNullOrEmpty(uRPF) ? "uRPF = " + uRPF +" AND \n ":"")+
-                        (!string.IsNullOrEmpty(_802_1x) ? "_802_1x = " + _802_1x +" AND \n ":"")+
-                        (!string.IsNullOrEmpty(SPAN_and_RSPAN) ? "SPAN_and_RSPAN = " + SPAN_and_RSPAN +" AND \n ":"")+
-                        (!string.IsNullOrEmpty(ERSPAN) ? "ERSPAN = " + ERSPAN +" AND \n ":"")+
-                        (!string.IsNullOrEmpty(EEM) ? "EEM = " + EEM +" AND \n ":"")+
-                        (!string.IsNullOrEmpty(Automation) ? "Automation = " + Automation : "TRUE") +
-                         " ORDER BY price LIMIT 1;";
+                sql = "SELECT * FROM Product WHERE TRUE " +
+                                "AND name = '" + name + "'\n " +
+                                "AND Branch = '" + Branch + "'\n " +
+                                 genWhere("Price", Price) + "\n " +
+                                 genWhere("IsAdvantageLicense", IsAdvantageLicense, true) + "\n " +
+                                 genWhere("ForwardingBandwidth", ForwardingBandwidth) + "\n " +
+                                 genWhere("SwitchingBandwidth", SwitchingBandwidth) + "\n " +
+                                 genWhere("ForwardingCapacity", ForwardingCapacity) + "\n " +
+                                 genWhere("RAM", RAM) + "\n " +
+                                 genWhere("Flash", Flash) + "\n " +
+                                 genWhere("Stackable", Stackable) + "\n " +
+                                 genWhere("Stack_Members", Stack_Members) + "\n " +
+                                 genWhere("Maximumnumberofunitsinavirtualchassis", Maximumnumberofunitsinavirtualchassis) + "\n " +
+                                 genWhere("PoE_15_4WPort", PoE_15_4WPort) + "\n " +
+                                 genWhere("PoE_Plus_30W_Port", PoE_Plus_30W_Port) + "\n " +
+                                 genWhere("UPOE_60W_Port", UPOE_60W_Port) + "\n " +
+                                 genWhere("HPOE_75_W_Port", HPOE_75_W_Port) + "\n " +
+                                 genWhere("_95W_802_3bt_PoE", _95W_802_3bt_PoE) + "\n " +
+                                 genWhere("_1GE_BaseT_Ports", _1GE_BaseT_Ports) + "\n " +
+                                 genWhere("_1GE_BaseX_SFP_port", _1GE_BaseX_SFP_port) + "\n " +
+                                 genWhere("_1G_SFP_plus_port_", _1G_SFP_plus_port_) + "\n " +
+                                 genWhere("RJ45_SFP_combo_1G", RJ45_SFP_combo_1G) + "\n " +
+                                 genWhere("_1G_10G_RJ45_SFP_combo", _1G_10G_RJ45_SFP_combo) + "\n " +
+                                 genWhere("_mgig_port_100M_1G_2_5G_5G", _mgig_port_100M_1G_2_5G_5G) + "\n " +
+                                 genWhere("_mgig_port_100M_1G_2_5G_5G_10G", _mgig_port_100M_1G_2_5G_5G_10G) + "\n " +
+                                 genWhere("_mgig_port_1G_2_5G_BaseT", _mgig_port_1G_2_5G_BaseT) + "\n " +
+                                 genWhere("_mgig_port_100M_1G_2_5G_BaseT", _mgig_port_100M_1G_2_5G_BaseT) + "\n " +
+                                 genWhere("_20G_QSFP_plus_stacking_ports", _20G_QSFP_plus_stacking_ports) + "\n " +
+                                 genWhere("_1G_SPF_port", _1G_SPF_port) + "\n " +
+                                 genWhere("_1G_10G_SFP_plus_", _1G_10G_SFP_plus_) + "\n " +
+                                 genWhere("_10_25G_SFP28", _10_25G_SFP28) + "\n " +
+                                 genWhere("_10GE_SFP_plus_Ports", _10GE_SFP_plus_Ports) + "\n " +
+                                 genWhere("_40GE_QSFP_plus_Ports", _40GE_QSFP_plus_Ports) + "\n " +
+                                 genWhere("_100GE_QSFP28_Ports", _100GE_QSFP28_Ports) + "\n " +
+                                 genWhere("_MAC_Address_Table", _MAC_Address_Table) + "\n " +
+                                 genWhere("_VLANs_ID", _VLANs_ID) + "\n " +
+                                 genWhere("_VLAN_active", _VLAN_active) + "\n " +
+                                 genWhere("_VLAN_Interfaces_SVI_for_L3_Sw_", _VLAN_Interfaces_SVI_for_L3_Sw_) + "\n " +
+                                 genWhere("_Jumbo_Frame_Bytes_", _Jumbo_Frame_Bytes_) + "\n " +
+                                 genWhere("_Total_number_of_IPv4_routes_ARP_plus_learned_routes_", _Total_number_of_IPv4_routes_ARP_plus_learned_routes_) + "\n " +
+                                 genWhere("_MAX_IPv4_routes", _MAX_IPv4_routes) + "\n " +
+                                 genWhere("_MAX_IPv6_routes", _MAX_IPv6_routes) + "\n " +
+                                 genWhere("_Multicast_groups", _Multicast_groups) + "\n " +
+                                 genWhere("_QoS_scale_entries", _QoS_scale_entries) + "\n " +
+                                 genWhere("_ACL_scale_entries", _ACL_scale_entries) + "\n " +
+                                 genWhere("_Flexible_NetFlow__FNF_entries", _Flexible_NetFlow__FNF_entries) + "\n " +
+                                 genWhere("_Power_Redundancy", _Power_Redundancy) + "\n " +
+                                 genWhere("Static_Routing", Static_Routing, true) + "\n " +
+                                 genWhere("RIP", RIP, true) + "\n " +
+                                 genWhere("OSPF_Routed_Access", OSPF_Routed_Access, true) + "\n " +
+                                 genWhere("OSPF_Full", OSPF_Full, true) + "\n " +
+                                 genWhere("BGP", BGP, true) + "\n " +
+                                 genWhere("IS_IS", IS_IS, true) + "\n " +
+                                 genWhere("VXLAN", VXLAN, true) + "\n " +
+                                 genWhere("MACSec", MACSec, true) + "\n " +
+                                 genWhere("MACSec_128_bit", MACSec_128_bit, true) + "\n " +
+                                 genWhere("MACSec_256_bit", MACSec_256_bit, true) + "\n " +
+                                 genWhere("PBR", PBR, true) + "\n " +
+                                 genWhere("Private_VLAN", Private_VLAN, true) + "\n " +
+                                 genWhere("VRRP", VRRP, true) + "\n " +
+                                 genWhere("DAI", DAI, true) + "\n " +
+                                 genWhere("uRPF", uRPF, true) + "\n " +
+                                 genWhere("_802_1x", _802_1x, true) + "\n " +
+                                 genWhere("SPAN_and_RSPAN", SPAN_and_RSPAN, true) + "\n " +
+                                 genWhere("ERSPAN", ERSPAN, true) + "\n " +
+                                 genWhere("EEM", EEM, true) + "\n " +
+                                 genWhere("Automation", Automation, true) + "\n " +
+                                                          " ORDER BY price LIMIT 1;";
                 using (command = new SQLiteCommand(sql, connection))
                 {
                     SQLiteDataReader reader = command.ExecuteReader();
@@ -405,7 +423,7 @@ namespace AppCuaChiTu
             string name = Convert.ToString(reader["name"]);
             string Branch = Convert.ToString(reader["Branch"]);
             decimal Price = Convert.ToDecimal(reader["Price"]);
-            bool IsAdvantageLicense = Convert.ToBoolean(reader["IsAdvantageLicense"]);
+            int IsAdvantageLicense = Convert.ToInt32(reader["IsAdvantageLicense"]);
             double ForwardingBandwidth = Convert.ToDouble(reader["ForwardingBandwidth"]);
             double SwitchingBandwidth = Convert.ToDouble(reader["SwitchingBandwidth"]);
             double ForwardingCapacity = Convert.ToDouble(reader["ForwardingCapacity"]);
@@ -448,26 +466,26 @@ namespace AppCuaChiTu
             int _ACL_scale_entries = Convert.ToInt32(reader["_ACL_scale_entries"]);
             int _Flexible_NetFlow__FNF_entries = Convert.ToInt32(reader["_Flexible_NetFlow__FNF_entries"]);
             int _Power_Redundancy = Convert.ToInt32(reader["_Power_Redundancy"]);
-            bool Static_Routing = Convert.ToBoolean(reader["Static_Routing"]);
-            bool RIP = Convert.ToBoolean(reader["RIP"]);
-            bool OSPF_Routed_Access = Convert.ToBoolean(reader["OSPF_Routed_Access"]);
-            bool OSPF_Full = Convert.ToBoolean(reader["OSPF_Full"]);
-            bool BGP = Convert.ToBoolean(reader["BGP"]);
-            bool IS_IS = Convert.ToBoolean(reader["IS_IS"]);
-            bool VXLAN = Convert.ToBoolean(reader["VXLAN"]);
-            bool MACSec = Convert.ToBoolean(reader["MACSec"]);
-            bool MACSec_128_bit = Convert.ToBoolean(reader["MACSec_128_bit"]);
-            bool MACSec_256_bit = Convert.ToBoolean(reader["MACSec_256_bit"]);
-            bool PBR = Convert.ToBoolean(reader["PBR"]);
-            bool Private_VLAN = Convert.ToBoolean(reader["Private_VLAN"]);
-            bool VRRP = Convert.ToBoolean(reader["VRRP"]);
-            bool DAI = Convert.ToBoolean(reader["DAI"]);
-            bool uRPF = Convert.ToBoolean(reader["uRPF"]);
-            bool _802_1x = Convert.ToBoolean(reader["_802_1x"]);
-            bool SPAN_and_RSPAN = Convert.ToBoolean(reader["SPAN_and_RSPAN"]);
-            bool ERSPAN = Convert.ToBoolean(reader["ERSPAN"]);
-            bool EEM = Convert.ToBoolean(reader["EEM"]);
-            bool Automation = Convert.ToBoolean(reader["Automation"]);
+            int Static_Routing = Convert.ToInt32(reader["Static_Routing"]);
+            int RIP = Convert.ToInt32(reader["RIP"]);
+            int OSPF_Routed_Access = Convert.ToInt32(reader["OSPF_Routed_Access"]);
+            int OSPF_Full = Convert.ToInt32(reader["OSPF_Full"]);
+            int BGP = Convert.ToInt32(reader["BGP"]);
+            int IS_IS = Convert.ToInt32(reader["IS_IS"]);
+            int VXLAN = Convert.ToInt32(reader["VXLAN"]);
+            int MACSec = Convert.ToInt32(reader["MACSec"]);
+            int MACSec_128_bit = Convert.ToInt32(reader["MACSec_128_bit"]);
+            int MACSec_256_bit = Convert.ToInt32(reader["MACSec_256_bit"]);
+            int PBR = Convert.ToInt32(reader["PBR"]);
+            int Private_VLAN = Convert.ToInt32(reader["Private_VLAN"]);
+            int VRRP = Convert.ToInt32(reader["VRRP"]);
+            int DAI = Convert.ToInt32(reader["DAI"]);
+            int uRPF = Convert.ToInt32(reader["uRPF"]);
+            int _802_1x = Convert.ToInt32(reader["_802_1x"]);
+            int SPAN_and_RSPAN = Convert.ToInt32(reader["SPAN_and_RSPAN"]);
+            int ERSPAN = Convert.ToInt32(reader["ERSPAN"]);
+            int EEM = Convert.ToInt32(reader["EEM"]);
+            int Automation = Convert.ToInt32(reader["Automation"]);
 
             product.id = id;
             product.name = name;
@@ -537,6 +555,19 @@ namespace AppCuaChiTu
             product.EEM = EEM;
             product.Automation = Automation;
             return product;
+        }
+
+        private string genWhere(string name, string value, bool isCombobox = false)
+        {
+            string res = "AND ";
+            if (value == null) return res + "TRUE ";
+            if (value == "") return res + "TRUE ";
+            if (isCombobox)
+            {
+                if (value == "-1" || value == "2") return res + "TRUE ";
+                return res + name + " = " + value + " ";
+            }
+            return res + name + " >= " + value + " ";
         }
     }
 }

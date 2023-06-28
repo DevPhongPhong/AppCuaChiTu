@@ -116,26 +116,6 @@
             this.label64 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this._Flexible_NetFlow__FNF_entries = new System.Windows.Forms.TextBox();
-            this.RIP = new System.Windows.Forms.CheckBox();
-            this.MACSec = new System.Windows.Forms.CheckBox();
-            this.BGP = new System.Windows.Forms.CheckBox();
-            this.VRRP = new System.Windows.Forms.CheckBox();
-            this.SPAN_and_RSPAN = new System.Windows.Forms.CheckBox();
-            this.ERSPAN = new System.Windows.Forms.CheckBox();
-            this.DAI = new System.Windows.Forms.CheckBox();
-            this.IS_IS = new System.Windows.Forms.CheckBox();
-            this.MACSec_128_bit = new System.Windows.Forms.CheckBox();
-            this.Static_Routing = new System.Windows.Forms.CheckBox();
-            this.EEM = new System.Windows.Forms.CheckBox();
-            this.uRPF = new System.Windows.Forms.CheckBox();
-            this.VXLAN = new System.Windows.Forms.CheckBox();
-            this.MACSec_256_bit = new System.Windows.Forms.CheckBox();
-            this.OSPF_Routed_Access = new System.Windows.Forms.CheckBox();
-            this.Automation = new System.Windows.Forms.CheckBox();
-            this._802_1x = new System.Windows.Forms.CheckBox();
-            this.PBR = new System.Windows.Forms.CheckBox();
-            this.Private_VLAN = new System.Windows.Forms.CheckBox();
-            this.OSPF_Full = new System.Windows.Forms.CheckBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
@@ -144,9 +124,49 @@
             this.Price = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
             this.alert = new System.Windows.Forms.Label();
-            this.radbutEssential = new System.Windows.Forms.RadioButton();
-            this.radbutAdv = new System.Windows.Forms.RadioButton();
             this.button1 = new System.Windows.Forms.Button();
+            this.RIP = new System.Windows.Forms.ComboBox();
+            this.label25 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
+            this.Static_Routing = new System.Windows.Forms.ComboBox();
+            this.label33 = new System.Windows.Forms.Label();
+            this.OSPF_Full = new System.Windows.Forms.ComboBox();
+            this.label34 = new System.Windows.Forms.Label();
+            this.OSPF_Routed_Access = new System.Windows.Forms.ComboBox();
+            this.label35 = new System.Windows.Forms.Label();
+            this.PBR = new System.Windows.Forms.ComboBox();
+            this.label36 = new System.Windows.Forms.Label();
+            this.VXLAN = new System.Windows.Forms.ComboBox();
+            this.label41 = new System.Windows.Forms.Label();
+            this.IS_IS = new System.Windows.Forms.ComboBox();
+            this.label42 = new System.Windows.Forms.Label();
+            this.BGP = new System.Windows.Forms.ComboBox();
+            this.label43 = new System.Windows.Forms.Label();
+            this.Private_VLAN = new System.Windows.Forms.ComboBox();
+            this.label44 = new System.Windows.Forms.Label();
+            this.MACSec_256_bit = new System.Windows.Forms.ComboBox();
+            this.label49 = new System.Windows.Forms.Label();
+            this.MACSec_128_bit = new System.Windows.Forms.ComboBox();
+            this.label50 = new System.Windows.Forms.Label();
+            this.MACSec = new System.Windows.Forms.ComboBox();
+            this.label57 = new System.Windows.Forms.Label();
+            this._802_1x = new System.Windows.Forms.ComboBox();
+            this.label58 = new System.Windows.Forms.Label();
+            this.uRPF = new System.Windows.Forms.ComboBox();
+            this.label59 = new System.Windows.Forms.Label();
+            this.DAI = new System.Windows.Forms.ComboBox();
+            this.label65 = new System.Windows.Forms.Label();
+            this.VRRP = new System.Windows.Forms.ComboBox();
+            this.label66 = new System.Windows.Forms.Label();
+            this.Automation = new System.Windows.Forms.ComboBox();
+            this.label67 = new System.Windows.Forms.Label();
+            this.EEM = new System.Windows.Forms.ComboBox();
+            this.label68 = new System.Windows.Forms.Label();
+            this.ERSPAN = new System.Windows.Forms.ComboBox();
+            this.label69 = new System.Windows.Forms.Label();
+            this.SPAN_and_RSPAN = new System.Windows.Forms.ComboBox();
+            this.label70 = new System.Windows.Forms.Label();
+            this.IsAdvantageLicense = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // label1
@@ -941,226 +961,6 @@
             this._Flexible_NetFlow__FNF_entries.Size = new System.Drawing.Size(156, 20);
             this._Flexible_NetFlow__FNF_entries.TabIndex = 123;
             // 
-            // RIP
-            // 
-            this.RIP.AutoSize = true;
-            this.RIP.Location = new System.Drawing.Point(179, 548);
-            this.RIP.Margin = new System.Windows.Forms.Padding(2);
-            this.RIP.Name = "RIP";
-            this.RIP.Size = new System.Drawing.Size(44, 17);
-            this.RIP.TabIndex = 145;
-            this.RIP.Text = "RIP";
-            this.RIP.UseVisualStyleBackColor = true;
-            // 
-            // MACSec
-            // 
-            this.MACSec.AutoSize = true;
-            this.MACSec.Location = new System.Drawing.Point(483, 548);
-            this.MACSec.Margin = new System.Windows.Forms.Padding(2);
-            this.MACSec.Name = "MACSec";
-            this.MACSec.Size = new System.Drawing.Size(68, 17);
-            this.MACSec.TabIndex = 146;
-            this.MACSec.Text = "MACSec";
-            this.MACSec.UseVisualStyleBackColor = true;
-            // 
-            // BGP
-            // 
-            this.BGP.AutoSize = true;
-            this.BGP.Location = new System.Drawing.Point(339, 548);
-            this.BGP.Margin = new System.Windows.Forms.Padding(2);
-            this.BGP.Name = "BGP";
-            this.BGP.Size = new System.Drawing.Size(48, 17);
-            this.BGP.TabIndex = 147;
-            this.BGP.Text = "BGP";
-            this.BGP.UseVisualStyleBackColor = true;
-            // 
-            // VRRP
-            // 
-            this.VRRP.AutoSize = true;
-            this.VRRP.Location = new System.Drawing.Point(645, 548);
-            this.VRRP.Margin = new System.Windows.Forms.Padding(2);
-            this.VRRP.Name = "VRRP";
-            this.VRRP.Size = new System.Drawing.Size(56, 17);
-            this.VRRP.TabIndex = 148;
-            this.VRRP.Text = "VRRP";
-            this.VRRP.UseVisualStyleBackColor = true;
-            // 
-            // SPAN_and_RSPAN
-            // 
-            this.SPAN_and_RSPAN.AutoSize = true;
-            this.SPAN_and_RSPAN.Location = new System.Drawing.Point(827, 548);
-            this.SPAN_and_RSPAN.Margin = new System.Windows.Forms.Padding(2);
-            this.SPAN_and_RSPAN.Name = "SPAN_and_RSPAN";
-            this.SPAN_and_RSPAN.Size = new System.Drawing.Size(122, 17);
-            this.SPAN_and_RSPAN.TabIndex = 149;
-            this.SPAN_and_RSPAN.Text = "SPAN_and_RSPAN";
-            this.SPAN_and_RSPAN.UseVisualStyleBackColor = true;
-            // 
-            // ERSPAN
-            // 
-            this.ERSPAN.AutoSize = true;
-            this.ERSPAN.Location = new System.Drawing.Point(827, 569);
-            this.ERSPAN.Margin = new System.Windows.Forms.Padding(2);
-            this.ERSPAN.Name = "ERSPAN";
-            this.ERSPAN.Size = new System.Drawing.Size(70, 17);
-            this.ERSPAN.TabIndex = 154;
-            this.ERSPAN.Text = "ERSPAN";
-            this.ERSPAN.UseVisualStyleBackColor = true;
-            // 
-            // DAI
-            // 
-            this.DAI.AutoSize = true;
-            this.DAI.Location = new System.Drawing.Point(645, 569);
-            this.DAI.Margin = new System.Windows.Forms.Padding(2);
-            this.DAI.Name = "DAI";
-            this.DAI.Size = new System.Drawing.Size(44, 17);
-            this.DAI.TabIndex = 153;
-            this.DAI.Text = "DAI";
-            this.DAI.UseVisualStyleBackColor = true;
-            // 
-            // IS_IS
-            // 
-            this.IS_IS.AutoSize = true;
-            this.IS_IS.Location = new System.Drawing.Point(339, 569);
-            this.IS_IS.Margin = new System.Windows.Forms.Padding(2);
-            this.IS_IS.Name = "IS_IS";
-            this.IS_IS.Size = new System.Drawing.Size(52, 17);
-            this.IS_IS.TabIndex = 152;
-            this.IS_IS.Text = "IS_IS";
-            this.IS_IS.UseVisualStyleBackColor = true;
-            // 
-            // MACSec_128_bit
-            // 
-            this.MACSec_128_bit.AutoSize = true;
-            this.MACSec_128_bit.Location = new System.Drawing.Point(483, 569);
-            this.MACSec_128_bit.Margin = new System.Windows.Forms.Padding(2);
-            this.MACSec_128_bit.Name = "MACSec_128_bit";
-            this.MACSec_128_bit.Size = new System.Drawing.Size(109, 17);
-            this.MACSec_128_bit.TabIndex = 151;
-            this.MACSec_128_bit.Text = "MACSec_128_bit";
-            this.MACSec_128_bit.UseVisualStyleBackColor = true;
-            // 
-            // Static_Routing
-            // 
-            this.Static_Routing.AutoSize = true;
-            this.Static_Routing.Location = new System.Drawing.Point(179, 569);
-            this.Static_Routing.Margin = new System.Windows.Forms.Padding(2);
-            this.Static_Routing.Name = "Static_Routing";
-            this.Static_Routing.Size = new System.Drawing.Size(96, 17);
-            this.Static_Routing.TabIndex = 150;
-            this.Static_Routing.Text = "Static_Routing";
-            this.Static_Routing.UseVisualStyleBackColor = true;
-            // 
-            // EEM
-            // 
-            this.EEM.AutoSize = true;
-            this.EEM.Location = new System.Drawing.Point(827, 590);
-            this.EEM.Margin = new System.Windows.Forms.Padding(2);
-            this.EEM.Name = "EEM";
-            this.EEM.Size = new System.Drawing.Size(49, 17);
-            this.EEM.TabIndex = 159;
-            this.EEM.Text = "EEM";
-            this.EEM.UseVisualStyleBackColor = true;
-            // 
-            // uRPF
-            // 
-            this.uRPF.AutoSize = true;
-            this.uRPF.Location = new System.Drawing.Point(645, 590);
-            this.uRPF.Margin = new System.Windows.Forms.Padding(2);
-            this.uRPF.Name = "uRPF";
-            this.uRPF.Size = new System.Drawing.Size(53, 17);
-            this.uRPF.TabIndex = 158;
-            this.uRPF.Text = "uRPF";
-            this.uRPF.UseVisualStyleBackColor = true;
-            // 
-            // VXLAN
-            // 
-            this.VXLAN.AutoSize = true;
-            this.VXLAN.Location = new System.Drawing.Point(339, 590);
-            this.VXLAN.Margin = new System.Windows.Forms.Padding(2);
-            this.VXLAN.Name = "VXLAN";
-            this.VXLAN.Size = new System.Drawing.Size(61, 17);
-            this.VXLAN.TabIndex = 157;
-            this.VXLAN.Text = "VXLAN";
-            this.VXLAN.UseVisualStyleBackColor = true;
-            // 
-            // MACSec_256_bit
-            // 
-            this.MACSec_256_bit.AutoSize = true;
-            this.MACSec_256_bit.Location = new System.Drawing.Point(483, 590);
-            this.MACSec_256_bit.Margin = new System.Windows.Forms.Padding(2);
-            this.MACSec_256_bit.Name = "MACSec_256_bit";
-            this.MACSec_256_bit.Size = new System.Drawing.Size(109, 17);
-            this.MACSec_256_bit.TabIndex = 156;
-            this.MACSec_256_bit.Text = "MACSec_256_bit";
-            this.MACSec_256_bit.UseVisualStyleBackColor = true;
-            // 
-            // OSPF_Routed_Access
-            // 
-            this.OSPF_Routed_Access.AutoSize = true;
-            this.OSPF_Routed_Access.Location = new System.Drawing.Point(179, 590);
-            this.OSPF_Routed_Access.Margin = new System.Windows.Forms.Padding(2);
-            this.OSPF_Routed_Access.Name = "OSPF_Routed_Access";
-            this.OSPF_Routed_Access.Size = new System.Drawing.Size(136, 17);
-            this.OSPF_Routed_Access.TabIndex = 155;
-            this.OSPF_Routed_Access.Text = "OSPF_Routed_Access";
-            this.OSPF_Routed_Access.UseVisualStyleBackColor = true;
-            // 
-            // Automation
-            // 
-            this.Automation.AutoSize = true;
-            this.Automation.Location = new System.Drawing.Point(827, 611);
-            this.Automation.Margin = new System.Windows.Forms.Padding(2);
-            this.Automation.Name = "Automation";
-            this.Automation.Size = new System.Drawing.Size(79, 17);
-            this.Automation.TabIndex = 164;
-            this.Automation.Text = "Automation";
-            this.Automation.UseVisualStyleBackColor = true;
-            // 
-            // _802_1x
-            // 
-            this._802_1x.AutoSize = true;
-            this._802_1x.Location = new System.Drawing.Point(645, 611);
-            this._802_1x.Margin = new System.Windows.Forms.Padding(2);
-            this._802_1x.Name = "_802_1x";
-            this._802_1x.Size = new System.Drawing.Size(61, 17);
-            this._802_1x.TabIndex = 163;
-            this._802_1x.Text = "802_1x";
-            this._802_1x.UseVisualStyleBackColor = true;
-            // 
-            // PBR
-            // 
-            this.PBR.AutoSize = true;
-            this.PBR.Location = new System.Drawing.Point(339, 611);
-            this.PBR.Margin = new System.Windows.Forms.Padding(2);
-            this.PBR.Name = "PBR";
-            this.PBR.Size = new System.Drawing.Size(48, 17);
-            this.PBR.TabIndex = 162;
-            this.PBR.Text = "PBR";
-            this.PBR.UseVisualStyleBackColor = true;
-            // 
-            // Private_VLAN
-            // 
-            this.Private_VLAN.AutoSize = true;
-            this.Private_VLAN.Location = new System.Drawing.Point(483, 611);
-            this.Private_VLAN.Margin = new System.Windows.Forms.Padding(2);
-            this.Private_VLAN.Name = "Private_VLAN";
-            this.Private_VLAN.Size = new System.Drawing.Size(93, 17);
-            this.Private_VLAN.TabIndex = 161;
-            this.Private_VLAN.Text = "Private_VLAN";
-            this.Private_VLAN.UseVisualStyleBackColor = true;
-            // 
-            // OSPF_Full
-            // 
-            this.OSPF_Full.AutoSize = true;
-            this.OSPF_Full.Location = new System.Drawing.Point(179, 611);
-            this.OSPF_Full.Margin = new System.Windows.Forms.Padding(2);
-            this.OSPF_Full.Name = "OSPF_Full";
-            this.OSPF_Full.Size = new System.Drawing.Size(76, 17);
-            this.OSPF_Full.TabIndex = 160;
-            this.OSPF_Full.Text = "OSPF_Full";
-            this.OSPF_Full.UseVisualStyleBackColor = true;
-            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -1231,28 +1031,6 @@
             this.alert.Size = new System.Drawing.Size(0, 25);
             this.alert.TabIndex = 171;
             // 
-            // radbutEssential
-            // 
-            this.radbutEssential.AutoSize = true;
-            this.radbutEssential.Checked = true;
-            this.radbutEssential.Location = new System.Drawing.Point(802, 488);
-            this.radbutEssential.Name = "radbutEssential";
-            this.radbutEssential.Size = new System.Drawing.Size(67, 17);
-            this.radbutEssential.TabIndex = 172;
-            this.radbutEssential.TabStop = true;
-            this.radbutEssential.Text = "Essential";
-            this.radbutEssential.UseVisualStyleBackColor = true;
-            // 
-            // radbutAdv
-            // 
-            this.radbutAdv.AutoSize = true;
-            this.radbutAdv.Location = new System.Drawing.Point(916, 488);
-            this.radbutAdv.Name = "radbutAdv";
-            this.radbutAdv.Size = new System.Drawing.Size(77, 17);
-            this.radbutAdv.TabIndex = 173;
-            this.radbutAdv.Text = "Advantage";
-            this.radbutAdv.UseVisualStyleBackColor = true;
-            // 
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(506, 488);
@@ -1263,40 +1041,482 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // RIP
+            // 
+            this.RIP.FormattingEnabled = true;
+            this.RIP.Items.AddRange(new object[] {
+            "0","1","All"
+       });
+            this.RIP.Location = new System.Drawing.Point(179, 542);
+            this.RIP.Name = "RIP";
+            this.RIP.Size = new System.Drawing.Size(121, 21);
+            this.RIP.TabIndex = 175;
+            this.RIP.SelectedIndexChanged += new System.EventHandler(this.RIP_SelectedIndexChanged);
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Location = new System.Drawing.Point(176, 523);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(25, 13);
+            this.label25.TabIndex = 176;
+            this.label25.Text = "RIP";
+            // 
+            // label26l","0","1","All"
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Location = new System.Drawing.Point(176, 567);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(77, 13);
+            this.label26.TabIndex = 178;
+            this.label26.Text = "Static_Routing";
+            // 
+            // Static_Routing
+            // 
+            this.Static_Routing.FormattingEnabled = true;
+            this.Static_Routing.Items.AddRange(new object[] {
+            "0","1","All"
+       });
+            this.Static_Routing.Location = new System.Drawing.Point(179, 586);
+            this.Static_Routing.Name = "Static_Routing";
+            this.Static_Routing.Size = new System.Drawing.Size(121, 21);
+            this.Static_Routing.TabIndex = 177;
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.Location = new System.Drawing.Point(176, 654);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(57, 13);
+            this.label33.TabIndex = 182;
+            this.label33.Text = "OSPF_Full";
+            // 
+            // OSPF_Full
+            // 
+            this.OSPF_Full.FormattingEnabled = true;
+            this.OSPF_Full.Items.AddRange(new object[] {
+            "0","1","All"
+       });
+            this.OSPF_Full.Location = new System.Drawing.Point(179, 673);
+            this.OSPF_Full.Name = "OSPF_Full";
+            this.OSPF_Full.Size = new System.Drawing.Size(121, 21);
+            this.OSPF_Full.TabIndex = 181;
+            // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.Location = new System.Drawing.Point(176, 610);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(117, 13);
+            this.label34.TabIndex = 180;
+            this.label34.Text = "OSPF_Routed_Access";
+            // 
+            // OSPF_Routed_Access
+            // 
+            this.OSPF_Routed_Access.FormattingEnabled = true;
+            this.OSPF_Routed_Access.Items.AddRange(new object[] {
+            "0","1","All"
+       });
+            this.OSPF_Routed_Access.Location = new System.Drawing.Point(179, 629);
+            this.OSPF_Routed_Access.Name = "OSPF_Routed_Access";
+            this.OSPF_Routed_Access.Size = new System.Drawing.Size(121, 21);
+            this.OSPF_Routed_Access.TabIndex = 179;
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.Location = new System.Drawing.Point(313, 654);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(29, 13);
+            this.label35.TabIndex = 190;
+            this.label35.Text = "PBR";
+            // 
+            // PBR
+            // 
+            this.PBR.FormattingEnabled = true;
+            this.PBR.Items.AddRange(new object[] {
+            "0","1","All"
+       });
+            this.PBR.Location = new System.Drawing.Point(316, 673);
+            this.PBR.Name = "PBR";
+            this.PBR.Size = new System.Drawing.Size(121, 21);
+            this.PBR.TabIndex = 189;
+            // 
+            // label36
+            // 
+            this.label36.AutoSize = true;
+            this.label36.Location = new System.Drawing.Point(313, 610);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(42, 13);
+            this.label36.TabIndex = 188;
+            this.label36.Text = "VXLAN";
+            // 
+            // VXLAN
+            // 
+            this.VXLAN.FormattingEnabled = true;
+            this.VXLAN.Items.AddRange(new object[] {
+            "0","1","All"
+       });
+            this.VXLAN.Location = new System.Drawing.Point(316, 629);
+            this.VXLAN.Name = "VXLAN";
+            this.VXLAN.Size = new System.Drawing.Size(121, 21);
+            this.VXLAN.TabIndex = 187;
+            // 
+            // label41
+            // 
+            this.label41.AutoSize = true;
+            this.label41.Location = new System.Drawing.Point(313, 567);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(33, 13);
+            this.label41.TabIndex = 186;
+            this.label41.Text = "IS_IS";
+            // 
+            // IS_IS
+            // 
+            this.IS_IS.FormattingEnabled = true;
+            this.IS_IS.Items.AddRange(new object[] {
+            "0","1","All"
+       });
+            this.IS_IS.Location = new System.Drawing.Point(316, 586);
+            this.IS_IS.Name = "IS_IS";
+            this.IS_IS.Size = new System.Drawing.Size(121, 21);
+            this.IS_IS.TabIndex = 185;
+            // 
+            // label42
+            // 
+            this.label42.AutoSize = true;
+            this.label42.Location = new System.Drawing.Point(313, 523);
+            this.label42.Name = "label42";
+            this.label42.Size = new System.Drawing.Size(29, 13);
+            this.label42.TabIndex = 184;
+            this.label42.Text = "BGP";
+            // 
+            // BGP
+            // 
+            this.BGP.DisplayMember = "All";
+            this.BGP.FormattingEnabled = true;
+            this.BGP.Items.AddRange(new object[] {
+            "0","1","All"
+       });
+            this.BGP.Location = new System.Drawing.Point(316, 542);
+            this.BGP.Name = "BGP";
+            this.BGP.Size = new System.Drawing.Size(121, 21);
+            this.BGP.TabIndex = 183;
+            // 
+            // label43
+            // 
+            this.label43.AutoSize = true;
+            this.label43.Location = new System.Drawing.Point(457, 654);
+            this.label43.Name = "label43";
+            this.label43.Size = new System.Drawing.Size(74, 13);
+            this.label43.TabIndex = 198;
+            this.label43.Text = "Private_VLAN";
+            // 
+            // Private_VLAN
+            // 
+            this.Private_VLAN.FormattingEnabled = true;
+            this.Private_VLAN.Items.AddRange(new object[] {
+            "0","1","All"
+       });
+            this.Private_VLAN.Location = new System.Drawing.Point(460, 673);
+            this.Private_VLAN.Name = "Private_VLAN";
+            this.Private_VLAN.Size = new System.Drawing.Size(121, 21);
+            this.Private_VLAN.TabIndex = 197;
+            // 
+            // label44
+            // 
+            this.label44.AutoSize = true;
+            this.label44.Location = new System.Drawing.Point(457, 610);
+            this.label44.Name = "label44";
+            this.label44.Size = new System.Drawing.Size(90, 13);
+            this.label44.TabIndex = 196;
+            this.label44.Text = "MACSec_256_bit";
+            // 
+            // MACSec_256_bit
+            // 
+            this.MACSec_256_bit.FormattingEnabled = true;
+            this.MACSec_256_bit.Items.AddRange(new object[] {
+            "0","1","All"
+       });
+            this.MACSec_256_bit.Location = new System.Drawing.Point(460, 629);
+            this.MACSec_256_bit.Name = "MACSec_256_bit";
+            this.MACSec_256_bit.Size = new System.Drawing.Size(121, 21);
+            this.MACSec_256_bit.TabIndex = 195;
+            // 
+            // label49
+            // 
+            this.label49.AutoSize = true;
+            this.label49.Location = new System.Drawing.Point(457, 567);
+            this.label49.Name = "label49";
+            this.label49.Size = new System.Drawing.Size(90, 13);
+            this.label49.TabIndex = 194;
+            this.label49.Text = "MACSec_128_bit";
+            // 
+            // MACSec_128_bit
+            // 
+            this.MACSec_128_bit.FormattingEnabled = true;
+            this.MACSec_128_bit.Items.AddRange(new object[] {
+            "0","1","All"
+       });
+            this.MACSec_128_bit.Location = new System.Drawing.Point(460, 586);
+            this.MACSec_128_bit.Name = "MACSec_128_bit";
+            this.MACSec_128_bit.Size = new System.Drawing.Size(121, 21);
+            this.MACSec_128_bit.TabIndex = 193;
+            // 
+            // label50
+            // 
+            this.label50.AutoSize = true;
+            this.label50.Location = new System.Drawing.Point(457, 523);
+            this.label50.Name = "label50";
+            this.label50.Size = new System.Drawing.Size(49, 13);
+            this.label50.TabIndex = 192;
+            this.label50.Text = "MACSec";
+            // 
+            // MACSec
+            // 
+            this.MACSec.FormattingEnabled = true;
+            this.MACSec.Items.AddRange(new object[] {
+            "0","1","All"
+       });
+            this.MACSec.Location = new System.Drawing.Point(460, 542);
+            this.MACSec.Name = "MACSec";
+            this.MACSec.Size = new System.Drawing.Size(121, 21);
+            this.MACSec.TabIndex = 191;
+            // 
+            // label57
+            // 
+            this.label57.AutoSize = true;
+            this.label57.Location = new System.Drawing.Point(609, 654);
+            this.label57.Name = "label57";
+            this.label57.Size = new System.Drawing.Size(42, 13);
+            this.label57.TabIndex = 206;
+            this.label57.Text = "802_1x";
+            // 
+            // _802_1x
+            // 
+            this._802_1x.FormattingEnabled = true;
+            this._802_1x.Items.AddRange(new object[] {
+            "0","1","All"
+       });
+            this._802_1x.Location = new System.Drawing.Point(612, 673);
+            this._802_1x.Name = "_802_1x";
+            this._802_1x.Size = new System.Drawing.Size(121, 21);
+            this._802_1x.TabIndex = 205;
+            // 
+            // label58
+            // 
+            this.label58.AutoSize = true;
+            this.label58.Location = new System.Drawing.Point(609, 610);
+            this.label58.Name = "label58";
+            this.label58.Size = new System.Drawing.Size(34, 13);
+            this.label58.TabIndex = 204;
+            this.label58.Text = "uRPF";
+            // 
+            // uRPF
+            // 
+            this.uRPF.FormattingEnabled = true;
+            this.uRPF.Items.AddRange(new object[] {
+            "0","1","All"
+       });
+            this.uRPF.Location = new System.Drawing.Point(612, 629);
+            this.uRPF.Name = "uRPF";
+            this.uRPF.Size = new System.Drawing.Size(121, 21);
+            this.uRPF.TabIndex = 203;
+            // 
+            // label59
+            // 
+            this.label59.AutoSize = true;
+            this.label59.Location = new System.Drawing.Point(609, 567);
+            this.label59.Name = "label59";
+            this.label59.Size = new System.Drawing.Size(25, 13);
+            this.label59.TabIndex = 202;
+            this.label59.Text = "DAI";
+            // 
+            // DAI
+            // 
+            this.DAI.FormattingEnabled = true;
+            this.DAI.Items.AddRange(new object[] {
+            "0","1","All"
+       });
+            this.DAI.Location = new System.Drawing.Point(612, 586);
+            this.DAI.Name = "DAI";
+            this.DAI.Size = new System.Drawing.Size(121, 21);
+            this.DAI.TabIndex = 201;
+            // 
+            // label65
+            // 
+            this.label65.AutoSize = true;
+            this.label65.Location = new System.Drawing.Point(609, 523);
+            this.label65.Name = "label65";
+            this.label65.Size = new System.Drawing.Size(37, 13);
+            this.label65.TabIndex = 200;
+            this.label65.Text = "VRRP";
+            // 
+            // VRRP
+            // 
+            this.VRRP.FormattingEnabled = true;
+            this.VRRP.Items.AddRange(new object[] {
+            "0","1","All"
+       });
+            this.VRRP.Location = new System.Drawing.Point(612, 542);
+            this.VRRP.Name = "VRRP";
+            this.VRRP.Size = new System.Drawing.Size(121, 21);
+            this.VRRP.TabIndex = 199;
+            // 
+            // label66
+            // 
+            this.label66.AutoSize = true;
+            this.label66.Location = new System.Drawing.Point(790, 654);
+            this.label66.Name = "label66";
+            this.label66.Size = new System.Drawing.Size(60, 13);
+            this.label66.TabIndex = 214;
+            this.label66.Text = "Automation";
+            // 
+            // Automation
+            // 
+            this.Automation.FormattingEnabled = true;
+            this.Automation.Items.AddRange(new object[] {
+            "0","1","All"
+       });
+            this.Automation.Location = new System.Drawing.Point(793, 673);
+            this.Automation.Name = "Automation";
+            this.Automation.Size = new System.Drawing.Size(121, 21);
+            this.Automation.TabIndex = 213;
+            // 
+            // label67
+            // 
+            this.label67.AutoSize = true;
+            this.label67.Location = new System.Drawing.Point(790, 610);
+            this.label67.Name = "label67";
+            this.label67.Size = new System.Drawing.Size(30, 13);
+            this.label67.TabIndex = 212;
+            this.label67.Text = "EEM";
+            // 
+            // EEM
+            // 
+            this.EEM.FormattingEnabled = true;
+            this.EEM.Items.AddRange(new object[] {
+            "0","1","All"
+       });
+            this.EEM.Location = new System.Drawing.Point(793, 629);
+            this.EEM.Name = "EEM";
+            this.EEM.Size = new System.Drawing.Size(121, 21);
+            this.EEM.TabIndex = 211;
+            // 
+            // label68
+            // 
+            this.label68.AutoSize = true;
+            this.label68.Location = new System.Drawing.Point(790, 567);
+            this.label68.Name = "label68";
+            this.label68.Size = new System.Drawing.Size(51, 13);
+            this.label68.TabIndex = 210;
+            this.label68.Text = "ERSPAN";
+            // 
+            // ERSPAN
+            // 
+            this.ERSPAN.FormattingEnabled = true;
+            this.ERSPAN.Items.AddRange(new object[] {
+            "0","1","All"
+       });
+            this.ERSPAN.Location = new System.Drawing.Point(793, 586);
+            this.ERSPAN.Name = "ERSPAN";
+            this.ERSPAN.Size = new System.Drawing.Size(121, 21);
+            this.ERSPAN.TabIndex = 209;
+            // 
+            // label69
+            // 
+            this.label69.AutoSize = true;
+            this.label69.Location = new System.Drawing.Point(790, 523);
+            this.label69.Name = "label69";
+            this.label69.Size = new System.Drawing.Size(103, 13);
+            this.label69.TabIndex = 208;
+            this.label69.Text = "SPAN_and_RSPAN";
+            // 
+            // SPAN_and_RSPAN
+            // 
+            this.SPAN_and_RSPAN.FormattingEnabled = true;
+            this.SPAN_and_RSPAN.Items.AddRange(new object[] {
+            "0","1","All"
+       });
+            this.SPAN_and_RSPAN.Location = new System.Drawing.Point(793, 542);
+            this.SPAN_and_RSPAN.Name = "SPAN_and_RSPAN";
+            this.SPAN_and_RSPAN.Size = new System.Drawing.Size(121, 21);
+            this.SPAN_and_RSPAN.TabIndex = 207;
+            // 
+            // label70
+            // 
+            this.label70.AutoSize = true;
+            this.label70.Location = new System.Drawing.Point(881, 471);
+            this.label70.Name = "label70";
+            this.label70.Size = new System.Drawing.Size(104, 13);
+            this.label70.TabIndex = 216;
+            this.label70.Text = "IsAdvantageLicense";
+            // 
+            // IsAdvantageLicense
+            // 
+            this.IsAdvantageLicense.FormattingEnabled = true;
+            this.IsAdvantageLicense.Items.AddRange(new object[] {
+            "0","1","All"
+       });
+            this.IsAdvantageLicense.Location = new System.Drawing.Point(884, 490);
+            this.IsAdvantageLicense.Name = "IsAdvantageLicense";
+            this.IsAdvantageLicense.Size = new System.Drawing.Size(121, 21);
+            this.IsAdvantageLicense.TabIndex = 215;
+            // 
             // SearchForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1185, 749);
+            this.Controls.Add(this.label70);
+            this.Controls.Add(this.IsAdvantageLicense);
+            this.Controls.Add(this.label66);
+            this.Controls.Add(this.Automation);
+            this.Controls.Add(this.label67);
+            this.Controls.Add(this.EEM);
+            this.Controls.Add(this.label68);
+            this.Controls.Add(this.ERSPAN);
+            this.Controls.Add(this.label69);
+            this.Controls.Add(this.SPAN_and_RSPAN);
+            this.Controls.Add(this.label57);
+            this.Controls.Add(this._802_1x);
+            this.Controls.Add(this.label58);
+            this.Controls.Add(this.uRPF);
+            this.Controls.Add(this.label59);
+            this.Controls.Add(this.DAI);
+            this.Controls.Add(this.label65);
+            this.Controls.Add(this.VRRP);
+            this.Controls.Add(this.label43);
+            this.Controls.Add(this.Private_VLAN);
+            this.Controls.Add(this.label44);
+            this.Controls.Add(this.MACSec_256_bit);
+            this.Controls.Add(this.label49);
+            this.Controls.Add(this.MACSec_128_bit);
+            this.Controls.Add(this.label50);
+            this.Controls.Add(this.MACSec);
+            this.Controls.Add(this.label35);
+            this.Controls.Add(this.PBR);
+            this.Controls.Add(this.label36);
+            this.Controls.Add(this.VXLAN);
+            this.Controls.Add(this.label41);
+            this.Controls.Add(this.IS_IS);
+            this.Controls.Add(this.label42);
+            this.Controls.Add(this.BGP);
+            this.Controls.Add(this.label33);
+            this.Controls.Add(this.OSPF_Full);
+            this.Controls.Add(this.label34);
+            this.Controls.Add(this.OSPF_Routed_Access);
+            this.Controls.Add(this.label26);
+            this.Controls.Add(this.Static_Routing);
+            this.Controls.Add(this.label25);
+            this.Controls.Add(this.RIP);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.radbutAdv);
-            this.Controls.Add(this.radbutEssential);
             this.Controls.Add(this.alert);
             this.Controls.Add(this.Price);
             this.Controls.Add(this.label18);
             this.Controls.Add(this.name);
             this.Controls.Add(this.label17);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.Automation);
-            this.Controls.Add(this._802_1x);
-            this.Controls.Add(this.PBR);
-            this.Controls.Add(this.Private_VLAN);
-            this.Controls.Add(this.OSPF_Full);
-            this.Controls.Add(this.EEM);
-            this.Controls.Add(this.uRPF);
-            this.Controls.Add(this.VXLAN);
-            this.Controls.Add(this.MACSec_256_bit);
-            this.Controls.Add(this.OSPF_Routed_Access);
-            this.Controls.Add(this.ERSPAN);
-            this.Controls.Add(this.DAI);
-            this.Controls.Add(this.IS_IS);
-            this.Controls.Add(this.MACSec_128_bit);
-            this.Controls.Add(this.Static_Routing);
-            this.Controls.Add(this.SPAN_and_RSPAN);
-            this.Controls.Add(this.VRRP);
-            this.Controls.Add(this.BGP);
-            this.Controls.Add(this.MACSec);
-            this.Controls.Add(this.RIP);
             this.Controls.Add(this._Flexible_NetFlow__FNF_entries);
             this.Controls.Add(this.label5);
             this.Controls.Add(this._MAX_IPv4_routes);
@@ -1486,26 +1706,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.CheckBox RIP;
-        private System.Windows.Forms.CheckBox MACSec;
-        private System.Windows.Forms.CheckBox BGP;
-        private System.Windows.Forms.CheckBox VRRP;
-        private System.Windows.Forms.CheckBox SPAN_and_RSPAN;
-        private System.Windows.Forms.CheckBox ERSPAN;
-        private System.Windows.Forms.CheckBox DAI;
-        private System.Windows.Forms.CheckBox IS_IS;
-        private System.Windows.Forms.CheckBox MACSec_128_bit;
-        private System.Windows.Forms.CheckBox Static_Routing;
-        private System.Windows.Forms.CheckBox EEM;
-        private System.Windows.Forms.CheckBox uRPF;
-        private System.Windows.Forms.CheckBox VXLAN;
-        private System.Windows.Forms.CheckBox MACSec_256_bit;
-        private System.Windows.Forms.CheckBox OSPF_Routed_Access;
-        private System.Windows.Forms.CheckBox Automation;
-        private System.Windows.Forms.CheckBox _802_1x;
-        private System.Windows.Forms.CheckBox PBR;
-        private System.Windows.Forms.CheckBox Private_VLAN;
-        private System.Windows.Forms.CheckBox OSPF_Full;
         //private System.Windows.Forms.RadioButton radbutEssential;
         //private System.Windows.Forms.RadioButton radbutAdv;
 
@@ -1516,9 +1716,49 @@
         private System.Windows.Forms.TextBox Price;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label alert;
-        private System.Windows.Forms.RadioButton radbutEssential;
-        private System.Windows.Forms.RadioButton radbutAdv;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ComboBox RIP;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.ComboBox Static_Routing;
+        private System.Windows.Forms.Label label33;
+        private System.Windows.Forms.ComboBox OSPF_Full;
+        private System.Windows.Forms.Label label34;
+        private System.Windows.Forms.ComboBox OSPF_Routed_Access;
+        private System.Windows.Forms.Label label35;
+        private System.Windows.Forms.ComboBox PBR;
+        private System.Windows.Forms.Label label36;
+        private System.Windows.Forms.ComboBox VXLAN;
+        private System.Windows.Forms.Label label41;
+        private System.Windows.Forms.ComboBox IS_IS;
+        private System.Windows.Forms.Label label42;
+        private System.Windows.Forms.ComboBox BGP;
+        private System.Windows.Forms.Label label43;
+        private System.Windows.Forms.ComboBox Private_VLAN;
+        private System.Windows.Forms.Label label44;
+        private System.Windows.Forms.ComboBox MACSec_256_bit;
+        private System.Windows.Forms.Label label49;
+        private System.Windows.Forms.ComboBox MACSec_128_bit;
+        private System.Windows.Forms.Label label50;
+        private System.Windows.Forms.ComboBox MACSec;
+        private System.Windows.Forms.Label label57;
+        private System.Windows.Forms.ComboBox _802_1x;
+        private System.Windows.Forms.Label label58;
+        private System.Windows.Forms.ComboBox uRPF;
+        private System.Windows.Forms.Label label59;
+        private System.Windows.Forms.ComboBox DAI;
+        private System.Windows.Forms.Label label65;
+        private System.Windows.Forms.ComboBox VRRP;
+        private System.Windows.Forms.Label label66;
+        private System.Windows.Forms.ComboBox Automation;
+        private System.Windows.Forms.Label label67;
+        private System.Windows.Forms.ComboBox EEM;
+        private System.Windows.Forms.Label label68;
+        private System.Windows.Forms.ComboBox ERSPAN;
+        private System.Windows.Forms.Label label69;
+        private System.Windows.Forms.ComboBox SPAN_and_RSPAN;
+        private System.Windows.Forms.Label label70;
+        private System.Windows.Forms.ComboBox IsAdvantageLicense;
     }
 }
 

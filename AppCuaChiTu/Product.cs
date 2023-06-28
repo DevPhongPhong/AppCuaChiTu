@@ -12,7 +12,7 @@ namespace AppCuaChiTu
         public string name { get; set; }
         public string Branch { get; set; }
         public decimal Price { get; set; }
-        public bool IsAdvantageLicense { get; set; }
+        public int IsAdvantageLicense { get; set; }
         public double ForwardingBandwidth { get; set; }
         public double SwitchingBandwidth { get; set; }
         public double ForwardingCapacity { get; set; }
@@ -55,25 +55,25 @@ namespace AppCuaChiTu
         public int _ACL_scale_entries { get; set; }
         public int _Flexible_NetFlow__FNF_entries { get; set; }
         public int _Power_Redundancy { get; set; }
-        public bool Static_Routing { get; set; }
-        public bool RIP { get; set; }
-        public bool OSPF_Routed_Access { get; set; }
-        public bool OSPF_Full { get; set; }
-        public bool BGP { get; set; }
-        public bool IS_IS { get; set; }
-        public bool VXLAN { get; set; }
-        public bool MACSec { get; set; }
-        public bool MACSec_128_bit { get; set; }
-        public bool MACSec_256_bit { get; set; }
-        public bool PBR { get; set; }
-        public bool Private_VLAN { get; set; }
-        public bool VRRP { get; set; }
-        public bool DAI { get; set; }
-        public bool uRPF { get; set; }
-        public bool _802_1x { get; set; }
-        public bool SPAN_and_RSPAN { get; set; }
-        public bool ERSPAN { get; set; }
-        public bool EEM { get; set; }
-        public bool Automation { get; set; }
+        public int Static_Routing { get; set; }
+        public int RIP { get; set; }
+        public int OSPF_Routed_Access { get; set; }
+        public int OSPF_Full { get; set; }
+        public int BGP { get; set; }
+        public int IS_IS { get; set; }
+        public int VXLAN { get; set; }
+        public int MACSec { get; set; }
+        public int MACSec_128_bit { get; set; }
+        public int MACSec_256_bit { get; set; }
+        public int PBR { get; set; }
+        public int Private_VLAN { get; set; }
+        public int VRRP { get; set; }
+        public int DAI { get; set; }
+        public int uRPF { get; set; }
+        public int _802_1x { get; set; }
+        public int SPAN_and_RSPAN { get; set; }
+        public int ERSPAN { get; set; }
+        public int EEM { get; set; }
+        public int Automation { get; set; }
     }
 }

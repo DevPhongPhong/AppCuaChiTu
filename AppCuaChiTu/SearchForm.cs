@@ -159,27 +159,27 @@ namespace AppCuaChiTu
             p._Flexible_NetFlow__FNF_entries = (tempStatus ? temp : -1);
 
 
-            p.RIP = RIP.Checked;
-            p.MACSec = MACSec.Checked;
-            p.BGP = BGP.Checked;
-            p.VRRP = VRRP.Checked;
-            p.SPAN_and_RSPAN = SPAN_and_RSPAN.Checked;
-            p.ERSPAN = ERSPAN.Checked;
-            p.DAI = DAI.Checked;
-            p.IS_IS = IS_IS.Checked;
-            p.MACSec_128_bit = MACSec_128_bit.Checked;
-            p.Static_Routing = Static_Routing.Checked;
-            p.EEM = EEM.Checked;
-            p.uRPF = uRPF.Checked;
-            p.VXLAN = VXLAN.Checked;
-            p.MACSec_256_bit = MACSec_256_bit.Checked;
-            p.OSPF_Routed_Access = OSPF_Routed_Access.Checked;
-            p.Automation = Automation.Checked;
-            p._802_1x = _802_1x.Checked;
-            p.PBR = PBR.Checked;
-            p.Private_VLAN = Private_VLAN.Checked;
-            p.OSPF_Full = OSPF_Full.Checked;
-            p.IsAdvantageLicense = radbutAdv.Checked ? true : false;
+            p.RIP = RIP.SelectedIndex;
+            p.MACSec = MACSec.SelectedIndex;
+            p.BGP = BGP.SelectedIndex;
+            p.VRRP = VRRP.SelectedIndex;
+            p.SPAN_and_RSPAN = SPAN_and_RSPAN.SelectedIndex;
+            p.ERSPAN = ERSPAN.SelectedIndex;
+            p.DAI = DAI.SelectedIndex;
+            p.IS_IS = IS_IS.SelectedIndex;
+            p.MACSec_128_bit = MACSec_128_bit.SelectedIndex;
+            p.Static_Routing = Static_Routing.SelectedIndex;
+            p.EEM = EEM.SelectedIndex;
+            p.uRPF = uRPF.SelectedIndex;
+            p.VXLAN = VXLAN.SelectedIndex;
+            p.MACSec_256_bit = MACSec_256_bit.SelectedIndex;
+            p.OSPF_Routed_Access = OSPF_Routed_Access.SelectedIndex;
+            p.Automation = Automation.SelectedIndex;
+            p._802_1x = _802_1x.SelectedIndex;
+            p.PBR = PBR.SelectedIndex;
+            p.Private_VLAN = Private_VLAN.SelectedIndex;
+            p.OSPF_Full = OSPF_Full.SelectedIndex;
+            p.IsAdvantageLicense = IsAdvantageLicense.SelectedIndex;
 
             if (string.IsNullOrEmpty(p.name))
             {
@@ -214,82 +214,13 @@ namespace AppCuaChiTu
 
         }
 
-        private void btnReset_Click(object sender, EventArgs e)
-        {
-            name.Text = "";
-            Branch.Text = "";
-            Maximumnumberofunitsinavirtualchassis.Text = "";
-            _mgig_port_100M_1G_2_5G_BaseT.Text = "";
-            _1G_SFP_plus_port_.Text = "";
-            _MAX_IPv6_routes.Text = "";
-            _100GE_QSFP28_Ports.Text = "";
-            _Multicast_groups.Text = "";
-            _MAC_Address_Table.Text = "";
-            _20G_QSFP_plus_.Text = "";
-            RJ45_SFP_combo_1G.Text = "";
-            PoE_15_4WPort.Text = "";
-            ForwardingBandwidth.Text = "";
-            _ACL_scale_entries.Text = "";
-            _VLAN_active.Text = "";
-            _1G_SPF_port.Text = "";
-            _mgig_port_100M_1G_2_5G_5G.Text = "";
-            UPOE_60W_Port.Text = "";
-            ForwardingCapacity.Text = "";
-            _QoS_scale_entries.Text = "";
-            _VLANs_ID.Text = "";
-            _20G_QSFP_plus_stacking_ports.Text = "";
-            _1G_10G_RJ45_SFP_combo.Text = "";
-            PoE_Plus_30W_Port.Text = "";
-            SwitchingBandwidth.Text = "";
-            _MAX_IPv4_routes.Text = "";
-            _40GE_QSFP_plus_Ports.Text = "";
-            _1GE_BaseX_SFP_port.Text = "";
-            Stack_Members.Text = "";
-            _Total_number_of_IPv4_routes_ARP_plus_learned_routes_.Text = "";
-            _10GE_SFP_plus_Ports.Text = "";
-            _1GE_BaseT_Ports.Text = "";
-            Stackable.Text = "";
-            _Power_Redundancy.Text = "";
-            _Jumbo_Frame_Bytes_.Text = "";
-            _10_25G_SFP28.Text = "";
-            _mgig_port_1G_2_5G_BaseT.Text = "";
-            _95W_802_3bt_PoE.Text = "";
-            Flash.Text = "";
-            _VLAN_Interfaces_SVI_for_L3_Sw_.Text = "";
-            _1G_10G_SFP_plus_.Text = "";
-            _mgig_port_100M_1G_2_5G_5G_10G.Text = "";
-            HPOE_75_W_Port.Text = "";
-            RAM.Text = "";
-            _Flexible_NetFlow__FNF_entries.Text = "";
-            radbutAdv.Checked = false;
-            radbutEssential.Checked = false;
-            RIP.Checked = false;
-            MACSec.Checked = false;
-            BGP.Checked = false;
-            VRRP.Checked = false;
-            SPAN_and_RSPAN.Checked = false;
-            ERSPAN.Checked = false;
-            DAI.Checked = false;
-            IS_IS.Checked = false;
-            MACSec_128_bit.Checked = false;
-            Static_Routing.Checked = false;
-            EEM.Checked = false;
-            uRPF.Checked = false;
-            VXLAN.Checked = false;
-            MACSec_256_bit.Checked = false;
-            OSPF_Routed_Access.Checked = false;
-            Automation.Checked = false;
-            _802_1x.Checked = false;
-            PBR.Checked = false;
-            Private_VLAN.Checked = false;
-            OSPF_Full.Checked = false;
-
-            alert.Text = "";
-        }
-
+        
         private void button1_Click(object sender, EventArgs e)
         {
-            string _IsAdvantageLicense = radbutAdv.Checked == true ? "1" : "0";
+            string _name= name.Text;
+            string _Branch = Branch.Text;
+            string _Price = Price.Text;
+            string _IsAdvantageLicense = IsAdvantageLicense.SelectedIndex.ToString();
             string _ForwardingBandwidth = ForwardingBandwidth.Text;
             string _SwitchingBandwidth = SwitchingBandwidth.Text;
             string _ForwardingCapacity = ForwardingCapacity.Text;
@@ -332,29 +263,32 @@ namespace AppCuaChiTu
             string __ACL_scale_entries = _ACL_scale_entries.Text;
             string __Flexible_NetFlow__FNF_entries = _Flexible_NetFlow__FNF_entries.Text;
             string __Power_Redundancy = _Power_Redundancy.Text;
-            string _Static_Routing = Static_Routing.Checked ? "1" : "0";
-            string _RIP = RIP.Checked ? "1" : "0";
-            string _OSPF_Routed_Access = OSPF_Routed_Access.Checked ? "1" : "0";
-            string _OSPF_Full = OSPF_Full.Checked ? "1" : "0";
-            string _BGP = BGP.Checked ? "1" : "0";
-            string _IS_IS = IS_IS.Checked ? "1" : "0";
-            string _VXLAN = VXLAN.Checked ? "1" : "0";
-            string _MACSec = MACSec.Checked ? "1" : "0";
-            string _MACSec_128_bit = MACSec_128_bit.Checked ? "1" : "0";
-            string _MACSec_256_bit = MACSec_256_bit.Checked ? "1" : "0";
-            string _PBR = PBR.Checked ? "1" : "0";
-            string _Private_VLAN = Private_VLAN.Checked ? "1" : "0";
-            string _VRRP = VRRP.Checked ? "1" : "0";
-            string _DAI = DAI.Checked ? "1" : "0";
-            string _uRPF = uRPF.Checked ? "1" : "0";
-            string __802_1x = _802_1x.Checked ? "1" : "0";
-            string _SPAN_and_RSPAN = SPAN_and_RSPAN.Checked ? "1" : "0";
-            string _ERSPAN = ERSPAN.Checked ? "1" : "0";
-            string _EEM = EEM.Checked ? "1" : "0";
-            string _Automation = Automation.Checked ? "1" : "0";
+            string _Static_Routing = Static_Routing.SelectedIndex.ToString();
+            string _RIP = RIP.SelectedIndex.ToString();
+            string _OSPF_Routed_Access = OSPF_Routed_Access.SelectedIndex.ToString();
+            string _OSPF_Full = OSPF_Full.SelectedIndex.ToString();
+            string _BGP = BGP.SelectedIndex.ToString();
+            string _IS_IS = IS_IS.SelectedIndex.ToString();
+            string _VXLAN = VXLAN.SelectedIndex.ToString();
+            string _MACSec = MACSec.SelectedIndex.ToString();
+            string _MACSec_128_bit = MACSec_128_bit.SelectedIndex.ToString();
+            string _MACSec_256_bit = MACSec_256_bit.SelectedIndex.ToString();
+            string _PBR = PBR.SelectedIndex.ToString();
+            string _Private_VLAN = Private_VLAN.SelectedIndex.ToString();
+            string _VRRP = VRRP.SelectedIndex.ToString();
+            string _DAI = DAI.SelectedIndex.ToString();
+            string _uRPF = uRPF.SelectedIndex.ToString();
+            string __802_1x = _802_1x.SelectedIndex.ToString();
+            string _SPAN_and_RSPAN = SPAN_and_RSPAN.SelectedIndex.ToString();
+            string _ERSPAN = ERSPAN.SelectedIndex.ToString();
+            string _EEM = EEM.SelectedIndex.ToString();
+            string _Automation = Automation.SelectedIndex.ToString();
 
             Repo repo = new Repo();
-            Product p = repo.Search(_IsAdvantageLicense,
+            Product p = repo.Search(_name,
+                                    _Branch,
+                                    _Price, 
+                                    _IsAdvantageLicense,
                                     _ForwardingBandwidth,
                                     _SwitchingBandwidth,
                                     _ForwardingCapacity,
@@ -420,6 +354,11 @@ namespace AppCuaChiTu
             if (p == null) MessageBox.Show("Không có sản phẩm thỏa mãn");
             else
                 MessageBox.Show($"id:{p.id} \nname:{p.name}\nBranch:{p.Branch}");
+        }
+
+        private void RIP_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
