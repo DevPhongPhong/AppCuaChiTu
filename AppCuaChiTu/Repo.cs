@@ -336,8 +336,8 @@ namespace AppCuaChiTu
             {
                 connection.Open();
                 sql = "SELECT * FROM Product WHERE TRUE " +
-                                "AND name = '" + name + "'\n " +
-                                "AND Branch = '" + Branch + "'\n " +
+                                (!string.IsNullOrEmpty(name)  ? "AND name = '" + name + "'\n " : " AND TRUE ") +
+                                (!string.IsNullOrEmpty(Branch)  ? "AND Branch = '" + Branch + "'\n " : " AND TRUE ") +
                                  genWhere("Price", Price) + "\n " +
                                  genWhere("IsAdvantageLicense", IsAdvantageLicense, true) + "\n " +
                                  genWhere("ForwardingBandwidth", ForwardingBandwidth) + "\n " +
@@ -415,6 +415,26 @@ namespace AppCuaChiTu
             }
         }
 
+        public void DeleteById(int id)
+        {
+            try
+            {
+                using (connection = new SQLiteConnection(connectionString))
+                {
+                    connection.Open();
+                    sql = "DELETE FROM Product WHERE id = " + id;
+                    using(var command = new SQLiteCommand(sql, connection))
+                    {
+                        command.ExecuteNonQuery();
+                    }
+                    connection.Close();
+                }
+            }
+            catch
+            {
+
+            }
+        }
         public Product setObj(SQLiteDataReader reader)
         {
             Product product = new Product();

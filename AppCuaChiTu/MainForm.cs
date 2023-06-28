@@ -12,6 +12,8 @@ namespace AppCuaChiTu
 {
     public partial class MainForm : Form
     {
+        BindingList<Product> dataList;
+        
         public MainForm()
         {
             InitializeComponent();
@@ -21,7 +23,8 @@ namespace AppCuaChiTu
         {
             Repo repo = new Repo();
             List<Product> products = repo.Gets();
-            dataGridView1.DataSource = products;
+            dataList = new BindingList<Product>(products);
+            dataGridView1.DataSource = dataList;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -34,6 +37,23 @@ namespace AppCuaChiTu
         {
             SearchForm searhForm = new SearchForm();
             searhForm.ShowDialog();
+        }
+
+        private void btnXoa_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Xóa", "Thông báo", MessageBoxButtons.YesNo);
+            if (result == DialogResult.Yes)
+            {
+                var id = int.Parse(dataGridView1.CurrentRow.Cells[0].Value.ToString());
+                DataGridViewRow selectedRow = dataGridView1.CurrentRow;
+                dataGridView1.Rows.Remove(selectedRow);
+                Repo repo = new Repo();
+                repo.DeleteById(id);
+            }
+            else
+            {
+            }
+            
         }
     }
 }
